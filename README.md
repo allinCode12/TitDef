@@ -27,13 +27,15 @@ We audited all other groups in our section (CodePuff, Tiger Commando, The Webste
 
 ---
 
-## 🏆 The Official 4-Title Portfolio (Ranked)
+## 🏆 The Official Capstone Portfolio & Defense Lineup
 
 | Rank | Title | Client Setting | Dedicated Algorithm | Local AI (Gemma 2B) | Analytics Focus |
 | :---: | :--- | :--- | :--- | :--- | :--- |
 | **RANK 1** | **CrewSync:** Event Staffing Optimization System | Kiddie Salon by Nail Brat *(Secured, Disclosed Relative)* | **Maximum Weight Bipartite Matching** (Kuhn-Munkres) with Haversine Spatio-Temporal Buffers | Ingests messy chat inquiries into JSON + generates explainable assignment rationales | Fulfillment lead-time, response decay curves, Slot At-Risk warning index |
 | **RANK 2** | **AquaRoute:** Micro-Logistics & Delivery Route Optimization | Neighborhood Water Refilling Station / Courier *(Accessible)* | **Clarke-Wright Savings Heuristic** for Capacitated Vehicle Routing (CVRPTW) | Extracts delivery addresses, landmarks, and drop quantities from informal Taglish text | Fleet mileage/fuel efficiency, on-time delivery rate, demand forecasting |
-| **RANK 3** | **PathPoint:** Indoor Store Discovery & Wayfinding | Local Multi-Level Commercial Center / FCM *(Reachable)* | **$A^*$ (A-Star) Topological Pathfinding** across multi-floor transitions | Natural language spatial intent search ("Find ramen near ATM on 2nd floor") | Foot-traffic density heatmaps, scan frequencies, search-to-visit conversion |
+| **RANK 3 (A)** | **LifelinePack:** Disaster Evacuation Ration & Triage Optimizer | Barangay DRRM / Relief Center *(High Social Impact)* | **Multi-Dimensional 0-1 Knapsack Problem (MKP)** with family caloric/vulnerability quotas | Parses messy triage notes (infant, elderly, medical alerts) into structured constraint bounds | Stock depletion burn-rate forecasting, Nutritional Equity Index (Gini/Variance) |
+| **RANK 3 (B)** | **Mottainai-Mark:** Bakery Perishable Dynamic Markdown System | Neighborhood Bakery / Pasteleria *(Accessible Retail)* | **Bellman Dynamic Programming** for Finite-Horizon Dynamic Markdown Pricing | Extracts recipe shelf-life limits, batch baking logs, and product category perishability | Food waste diversion metric (kg & PHP saved), price elasticity of demand curves |
+| **RANK 3 (C)** | **PathPoint:** Indoor Store Discovery & Wayfinding | Local Multi-Level Commercial Center / FCM *(Reachable)* | **$A^*$ (A-Star) Topological Pathfinding** across multi-floor transitions | Natural language spatial intent search ("Find ramen near ATM on 2nd floor") | Foot-traffic density heatmaps, scan frequencies, search-to-visit conversion |
 | **RANK 4** | **AlumniTrack:** Graduate Employment & Curriculum Alignment | FEU Diliman Alumni / Placement Office *(Gate 0)* | **Vector Semantic Cosine Similarity** against CHED CMO 25 s. 2015 competencies | Maps free-text job roles into standard PSOC 2012 taxonomy | Kaplan-Meier job placement velocity survival curves, curriculum gap heatmaps |
 
 ---
@@ -47,7 +49,7 @@ Title Def - SysAd/
 ├── CrewSync_BSIT_WMA_Research_Mentor_Skill.md # Mentor prompts, research queries (Q1-Q20), anti-hallucination rules
 ├── ResiboCheck_Project_Context_DEPRECATED.md  # Post-mortem & rejection trace of Title 1 (ResiboCheck)
 │
-├── CrewSync/                                  # RANK 1 PROJECT PACK
+├── CrewSync/                                  # RANK 1 PROJECT PACK (Event Staffing)
 │   ├── CrewSync_Project_Context.md            # Single source of truth (entities, state models, rules)
 │   ├── CrewSync_Defense_Cheat_Sheet_UPDATED.md# Q&A defense armor (answers for 'seems small', 5 talents, AI)
 │   ├── CrewSync_Slide_Deck_Content.md         # Slide blueprint for Title Defense (Slides 4–14)
@@ -55,10 +57,16 @@ Title Def - SysAd/
 │   ├── Client_Owner_Interview_Guide.md        # 12-question fact-finding interview guide for Nail Brat owner
 │   └── Client_Endorsement_Letter_Template.md  # Partnership endorsement letter with relative disclosure
 │
-├── AquaRoute/                                 # RANK 2 PROJECT PACK (Micro-Logistics CVRP)
+├── AquaRoute/                                 # RANK 2 PROJECT PACK (Micro-Logistics CVRPTW)
 │   └── AquaRoute_Project_Context.md           # Project pack, CVRPTW algorithm, Gemma parser, metrics
 │
-├── PathPoint/                                 # RANK 3 PROJECT PACK (Indoor Wayfinding)
+├── LifelinePack/                              # RANK 3 (OPTION A) PROJECT PACK (Disaster Relief MKP)
+│   └── LifelinePack_Project_Context.md        # Project pack, Multi-Dimensional Knapsack, triage parser, burn rates
+│
+├── MottainaiMark/                             # RANK 3 (OPTION B) PROJECT PACK (Perishable Dynamic Markdown)
+│   └── MottainaiMark_Project_Context.md       # Project pack, Bellman DP dynamic pricing, waste diversion metrics
+│
+├── PathPoint/                                 # RANK 3 (OPTION C) PROJECT PACK (Indoor Wayfinding A*)
 │   └── PathPoint_Project_Context.md           # Project pack, A* graph pathfinder, spatial NLP, analytics
 │
 ├── AlumniTrack/                               # RANK 4 PROJECT PACK (HEI Institutional)
@@ -79,20 +87,28 @@ Title Def - SysAd/
 
 ---
 
-## 🛡️ Standard Defense Script (How to Defend the AI & WMA Scope)
+## 🛡️ Standard Defense Script (How to Defend the AI, Scope, & "Inventory" Traps)
 
 When the panel asks:
 
-### 1. "Why do all your titles need AI? What if it hallucinates or costs too much?"
-> *"We do not use proprietary cloud APIs like OpenAI or Anthropic. We run Google's lightweight open-weights **Gemma 2B** model locally via Ollama. It incurs **zero recurring API costs**, runs in under 600ms on a local server, and complies with **RA 10173 (Data Privacy Act)** because no client or citizen data leaves the premises. Most importantly, the AI does not make operational decisions—it strictly parses unstructured human text into clean JSON parameters. The operational decisions (matching, routing, pathfinding) are executed by our deterministic, mathematically provable algorithms (Hungarian, Clarke-Wright, $A^*$), guaranteeing 100% mathematical correctness."*
+### 1. "Isn't this just another Inventory Management System (IMS) or CRUD?" (For LifelinePack / AquaRoute / Mottainai-Mark)
+> *"Sir/Ma'am, a standard inventory system is strictly **descriptive**—it only acts as a passive database ledger recording stock in and stock out. It has zero intelligence to make operational decisions.  
+> Our systems are **prescriptive optimization engines**.  
+> - For **LifelinePack**, it solves the **Multi-Dimensional 0-1 Knapsack Problem (MKP)** to calculate customized nutritional survival blueprints under severe stockpile scarcity.  
+> - For **AquaRoute**, it solves the **Capacitated Vehicle Routing Problem with Time Windows (CVRPTW)** to optimize multi-stop motorcycle routes.  
+> - For **Mottainai-Mark**, it solves the **Stochastic Dynamic Pricing Problem via Bellman Dynamic Programming** to optimize hourly markdown price depreciation.  
+> The database is merely an input parameter; the core research contribution is the **mathematical optimization algorithm**."*
 
-### 2. "Why both Web and Mobile?"
-> *"The split follows context of use, not headcount. The **Web Application** is engineered for desktop command, configuration, geospatial planning, and high-density analytics dashboards. The **Mobile Application** is engineered strictly for frontline mobile actors (freelance artists, motorcycle delivery riders, shoppers, alumni) who are away from a desk and require push alerts, GPS integration, offline caching, and single-tap task completion."*
+### 2. "Why do all your titles need AI? What if it hallucinates or costs too much?"
+> *"We do not use proprietary cloud APIs like OpenAI or Anthropic. We run Google's lightweight open-weights **Gemma 2B** model locally via Ollama. It incurs **zero recurring API costs**, runs in under 600ms on a local server, and complies with **RA 10173 (Data Privacy Act)** because no client or citizen data leaves the premises. Most importantly, the AI does not make operational decisions—it strictly parses unstructured human text into clean JSON parameters. The operational decisions (matching, routing, pathfinding, knapsack allocation) are executed by our deterministic, mathematically provable algorithms, guaranteeing 100% mathematical correctness."*
+
+### 3. "Why both Web and Mobile?"
+> *"The split follows context of use, not headcount. The **Web Application** is engineered for desktop command, configuration, geospatial planning, and high-density analytics dashboards. The **Mobile Application** is engineered strictly for frontline mobile actors (freelance artists, motorcycle delivery riders, triage gym volunteers, shoppers, alumni) who are away from a desk and require push alerts, GPS integration, offline caching, and single-tap task completion."*
 
 ---
 
 ## ⏱️ Immediate Next Steps for Group 6
 1. **Mesina (CrewSync):** Conduct the 15-minute owner interview and have the endorsement letter signed.
 2. **Canido (AlumniTrack):** Send the `Gate0_Approach_Message.md` to the FEU Diliman Alumni/Careers office this week.
-3. **Third Member / Team:** Reach out to a neighborhood water refilling station or local commercial building to lock in Rank 2 or Rank 3.
-4. **Consultation #3:** Present the 4-title matrix on Slide 1 and walk through the portfolio with complete confidence!
+3. **Team:** Review the 3 core defense choices (CrewSync + AquaRoute + LifelinePack/Mottainai-Mark/PathPoint).
+4. **Consultation #3:** Present the portfolio matrix on Slide 1 and walk through the portfolio with complete confidence!
