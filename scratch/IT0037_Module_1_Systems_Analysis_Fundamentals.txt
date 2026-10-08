@@ -1,0 +1,608 @@
+--- p1 ---
+SYSTEMS ANALYSIS 
+FUNDAMENTALS
+AND ORGANIZATIONAL 
+CONTEXT
+--- p2 ---
+MODULE 1
+LEARNING OBJECTIVES
+--- p3 ---
+ILO 1: Explain systems concepts, analyst roles, ethical 
+responsibilities, and predictive, agile, prototyping, cloud, 
+and hybrid approaches.
+ILO 2: Analyze organizational context, stakeholders, 
+problem or opportunity evidence, root causes, and 
+expected value.
+What you will learn
+--- p4 ---
+[AI-PROHIBITED] Complete the Diagnostic Assessment 
+for Summative Assessment 1 in Canvas before opening 
+Module 1. It is ungraded and used only for readiness 
+mapping and targeted support.
+Before you begin
+--- p5 ---
+Why do useful systems still fail after 
+deployment—even when the software works 
+as coded?
+Question of understanding
+--- p6 ---
+SYSTEMS, ROLES, AND
+DEVELOPMENT APPROACHES
+--- p7 ---
+Good systems begin with evidence, not with a favorite technology or feature list.
+Disciplined analysis connects evidence to value
+Credible
+evidence
+Validated
+requirements
+Defensible
+design
+Measurable
+value
+Planning reduces rework, unmanaged risk, stakeholder conflict, and 
+solutions that address symptoms instead of causes.
+--- p8 ---
+Both are necessary, but they solve different parts of the decision.
+Analysis and design answer different questions
+SYSTEMS ANALYSIS
+What problem or opportunity 
+exists?
+Who is affected?
+What must the system 
+accomplish?
+SYSTEM DESIGN
+How will the validated 
+solution work?
+How will data, interfaces, 
+controls, and components fit 
+together?
+--- p9 ---
+The goal is not to standardize one process; it is to make choices traceable and 
+fit for context.
+Disciplined SAD improves decision quality
+Understand 
+context
+Separate causes 
+from symptoms Align stakeholders
+Reduce risk and 
+rework
+Produce traceable 
+decisions
+Each outcome depends on evidence, stakeholder participation, and 
+documented judgment.
+--- p10 ---
+No method is automatically best; fit depends on uncertainty, risk, feedback, 
+and delivery conditions.
+Compare and tailor development approaches
+Predictive Agile Prototyping Cloud
+lifecycle Hybrid
+TAILOR USING: requirement stability • stakeholder 
+access • compliance • technical risk • release cadence • 
+team capability
+--- p11 ---
+Move from what is happening to why it matters before proposing a solution.
+Problem framing turns evidence into direction
+Context Stakeholder
+voices Evidence Root causes Expected 
+value
+A title becomes defensible only when this chain is supported 
+by organizational evidence.
+--- p12 ---
+Use this sequence when scope and requirements can be established with 
+reasonable stability; feedback can still trigger revision.
+One predictive SDLC example
+Recognize
+need Feasibility Analysis Design Build +
+test Implement Support +
+improve
+Feedback and change control can 
+return work to an earlier stage.
+--- p13 ---
+A useful model shows what enters, what changes, what leaves, and how 
+performance is corrected.
+A system is interrelated parts working toward a purpose
+INPUTS
+People • data 
+• resources
+PROCESS
+Activities 
+transform inputs 
+according to rules 
+and controls
+OUTPUTS
+Services • 
+decisions • 
+records
+PURPOSE
+Value for 
+stakeholders
+FEEDBACK + CONTROL compare actual results with 
+expectations and guide correction.
+--- p14 ---
+Define the system, external actors, interfaces, feedback, and assumptions 
+before setting scope.
+Boundaries clarify control and interaction
+SYSTEM BOUNDARY
+Processes • data • rules • controls
+Interfaces exchange information 
+with the environment
+Customers / 
+users
+Partners / 
+regulators
+Policies / 
+culture
+Platforms / 
+environment
+--- p15 ---
+The role changes with the engagement, but the analyst remains accountable 
+for traceable reasoning.
+Analysts connect people, evidence, and decisions
+Consultant
+Clarifies a need 
+and 
+recommends a 
+direction
+Supporting 
+expert
+Contributes 
+specialized 
+analysis or 
+methods
+Change agent
+Helps 
+stakeholders 
+adopt 
+improved work
+Facilitator
+Builds shared 
+understanding 
+and resolves 
+conflict
+--- p16 ---
+Technical knowledge alone is insufficient when the real challenge involves 
+people, policy, and competing interests.
+Effective analysts combine five competencies
+Analytical
+Patterns, 
+causes, 
+models
+Technical
+Data, 
+platforms, 
+controls
+People skills
+Listening, 
+facilitation, 
+writing
+Organizational
+Culture, 
+process, 
+governance
+Professional
+Ethics, 
+judgment, 
+learning
+--- p17 ---
+Professional judgment asks what is permitted, what is responsible, and whose 
+interests may be overlooked.
+Ethical analysis protects stakeholders
+Identify 
+affected
+stakeholders
+Examine risk, 
+rights,
+and power
+Use evidence 
+and
+disclose 
+uncertainty
+Recommend 
+and
+document 
+responsibly
+RED FLAGS: hidden conflicts • unnecessary data collection
+• discriminatory impact • unsupported claims • concealed AI 
+assistance
+--- p18 ---
+Security, privacy, accessibility, and responsible AI use shape requirements—
+not just final testing.
+Responsible design begins with four lenses
+TRUSTWORTHY
+SOLUTION
+SECURE BY DESIGN
+Threats and controls
+PRIVACY BY DESIGN
+Purpose and 
+minimization
+ACCESSIBILITY
+Inclusive interaction
+RESPONSIBLE AI
+Disclosure and 
+validation
+--- p19 ---
+DEVELOPMENT APPROACHES
+--- p20 ---
+Compare the logic of each approach before selecting or combining them.
+Five approach families fit different conditions
+Predictive
+Stable scope
+and formal 
+gates
+Agile
+Frequent 
+change
+and 
+feedback
+Prototyping
+Unclear 
+needs
+or 
+interaction
+Cloud 
+lifecycle
+Continuous 
+delivery
+and 
+operations
+Hybrid
+Mixed 
+certainty
+and 
+constraints
+--- p21 ---
+Use it when requirements are comparatively stable and formal documentation 
+or approval gates matter.
+Predictive development follows planned progression
+Plan Analyze Design Build + 
+test
+Implement 
++ support
+Strength: traceability and predictability  •  Risk: late feedback can 
+make change expensive
+--- p22 ---
+A product backlog is refined through time-boxed work, review, and 
+retrospective improvement.
+Agile and Scrum organize short learning cycles
+Product
+backlog
+Sprint
+planning Build + test Sprint
+review
+Sprint
+retrospective
+Repeat with updated priorities and 
+evidence
+--- p23 ---
+A prototype is a learning instrument; it does not automatically become the 
+production system.
+Prototyping reduces uncertainty through interaction
+Discover Sketch Prototype Test Refine
+Validate assumptions about workflow, information, usability, and 
+value before committing to detailed design.
+--- p24 ---
+Architecture, deployment, observability, security, and cost decisions evolve 
+together.
+Cloud development links delivery and operations
+Assess Design Build Deploy Operate + 
+improve
+Continuous concerns: security • privacy • 
+resilience • observability • cost
+--- p25 ---
+Combine methods only when the boundaries, handoffs, governance, and risks 
+are clearly defined.
+Hybrid delivery combines methods with a rationale
+PREDICTIVE 
+FOUNDATION
+Architecture • 
+compliance • major 
+approvals
+ITERATIVE DELIVERY
+Features • user feedback 
+• progressive releases
+HYBRID
+TAILORING
+A hybrid is not “use everything.” Each part must solve a 
+specific delivery condition.
+--- p26 ---
+Use the same case evidence to compare alternatives; document both the 
+choice and the rejected options.
+Select an approach with evidence-based criteria
+Scope
+stability
+Stakeholder
+access
+Risk +
+compliance
+Release
+cadence
+Team +
+operations
+Decision record = selected approach + tailoring 
+rules + evidence + limitations + risks
+--- p27 ---
+Case condition: Describe the specialization setting, 
+uncertainty, risk, and stakeholder access.
+Compare: Predictive, agile, prototyping, cloud, and hybrid 
+approaches using the same criteria.
+Decide: Select and tailor one direction; record why the 
+alternatives were rejected.
+Defend: Connect the recommendation to credible course and 
+organizational evidence.
+Workshop: compare development approaches
+--- p28 ---
+Use AI to generate a comparison, then verify, critique, correct, and disclose 
+your responsible use.
+Technical Activity 1: Audit AI advice
+Prompt with
+case 
+evidence
+Capture AI
+output
+Verify 
+against
+course 
+sources
+Accept, 
+reject,
+and correct
+Disclose AI 
+use
+and 
+validation
+[AI-INTEGRATED] Submit prompts, outputs, validation, 
+corrections, and AI Use Disclosure.
+--- p29 ---
+ORGANIZATIONAL SYSTEMS
+AND PROBLEM FRAMING
+--- p30 ---
+A change in one element can improve—or destabilize—other parts of the 
+organization.
+Organizations behave as interacting systems
+SHARED
+PURPOSE
+People Process
+Data + information Technology
+Culture + 
+governance
+--- p31 ---
+Place stakeholders by power and interest, then plan how each group should 
+participate.
+Stakeholder maps reveal influence and impact
+POWER →
+INTEREST ↑
+KEEP INFORMED
+Frontline users
+MANAGE CLOSELY
+Sponsor • process 
+owner
+MONITOR
+Occasional users
+KEEP SATISFIED
+Regulator • executive
+--- p32 ---
+Keep the proposed system as one process at this level; show actors and 
+exchanged information.
+Context diagrams define external relationships
+PROPOSED
+INFORMATION 
+SYSTEM
+User
+requests + 
+feedback
+Process owner
+approvals
+External service
+reference data
+Management
+reports + alerts
+--- p33 ---
+Show people, activities, information, tensions, risks, and unanswered 
+questions in one shared view.
+Rich pictures capture the messy reality
+PEOPLE
+Who acts or 
+decides?
+PROCESS
+What actually 
+happens?
+INFORMATION
+What is created 
+or lost?
+TENSIONS
+Where do 
+goals 
+conflict?
+Add symbols for delays, workarounds, security 
+concerns, complaints, uncertainty, and opportunities.
+--- p34 ---
+Do not convert the first complaint into a system feature until the underlying 
+cause is supported.
+Symptoms are visible; problems explain persistence
+SYMPTOM
+“Reports are always late.”
+Observed effect that signals a 
+deeper issue
+PROBLEM / ROOT CAUSE
+Unclear ownership, duplicated 
+data, and off-workflow approvals
+Evidence-supported explanation
+--- p35 ---
+A defensible problem statement uses multiple sources and explains 
+contradictions rather than hiding them.
+Triangulate evidence before making a claim
+Interviews Observation
+Documents 
++
+policies
+Logs + 
+records
+Surveys +
+metrics
+TRIANGULATED FINDING
+What do the sources consistently 
+support?
+--- p36 ---
+Treat branches as hypotheses; confirm them with evidence before calling them 
+root causes.
+Ishikawa analysis organizes causes for verification
+EFFECT
+Late or unreliable 
+service outcome
+People Process Technology
+Data Policy External
+factors
+--- p37 ---
+State who benefits, what improves, and how success could later be observed.
+Expected value links change to measurable outcomes
+Evidence of
+current 
+condition
+Proposed
+change
+User / process
+outcome
+Measure of
+success
+Example: reduce duplicate encoding and improve the timeliness 
+and traceability of approved records.
+--- p38 ---
+SPECIALIZATION STUDIO
+--- p39 ---
+Begin with the transaction and evidence; then identify trust boundaries, abuse 
+paths, and required safeguards.
+Cybersecurity lens: protect the operational workflow
+WORKFLOW
+Incident intake 
+and validation
+RISK
+False reports, 
+tampering, 
+unauthorized 
+access
+CONTROL 
+NEED
+Authentication, 
+integrity, 
+traceability
+VALUE
+Faster, 
+defensible 
+response 
+decisions
+Project framing: operational workflow + verified threat + justified 
+control + measurable security/mission outcome
+--- p40 ---
+A polished interface cannot repair a service that has unclear ownership, 
+missing feedback, or broken handoffs.
+Web and Mobile lens: follow the service journey
+Discover Request Validate Track Resolve + 
+support
+Check accessibility, response time, device constraints, privacy, 
+and recovery from interrupted use.
+--- p41 ---
+Treat both the production pipeline and the player system as analyzable 
+systems with feedback.
+AGD lens: connect production and player experience
+PRODUCTION SYSTEM
+Concept → assets → integration → 
+testing → release
+Look for rework, bottlenecks, 
+version issues, and quality gates.
+PLAYER SYSTEM
+Goal → action → feedback → 
+challenge → progression
+Look for usability, balance, 
+engagement, accessibility, and 
+learning outcomes.
+--- p42 ---
+A dashboard is valuable only when data quality, definitions, decision rights, 
+and actions are clear.
+Business Analytics lens: trace data to a decision
+Sources Quality +
+definitions Analysis Insight Decision + 
+action
+Verify ownership, timeliness, bias, privacy, interpretation, and 
+how the insight changes a decision.
+--- p43 ---
+Write the title after problem framing—not before gathering evidence.
+Preliminary titles need four essential elements
+System or
+capability
+Users or
+setting
+Value or
+problem
+Specialization-
+aligned
+differentiator
+Avoid: feature inventories, unsupported AI claims, vague 
+users, and titles that hide the real transaction.
+--- p44 ---
+Cybersecurity: BantayNet: A Secure Incident Reporting and
+Evidence-Validation System for Public-School Networks
+Web and Mobile: LakbayLink: A Mobile Visitor-Service and
+Local-Guide Coordination Platform for Community Tourism
+Offices
+Check the logic: Each title names the capability, setting,
+value/problem direction, and specialization lens without
+becoming a feature list.
+Title examples: Cybersecurity and Web & Mobile
+--- p45 ---
+Animation and Game Development: Storm Shield: A Cooperative
+Disaster-Preparedness Game for Senior High School Learners
+Business Analytics: InsightFlow: A Decision-Support Dashboard
+for Enrollment and Student-Service Planning
+Check the logic: A credible title still requires stakeholder,
+context, evidence, root-cause, and expected-value support in the
+portfolio.
+Title examples: AGD and Business Analytics
+--- p46 ---
+Can another team trace your preliminary title back to 
+credible stakeholders, a defined system context, 
+verified root causes, expected value, and a justified 
+specialization lens?
+Peer quality gate
+--- p47 ---
+Use the Canvas instructions and official templates for the quiz and technical 
+activity.
+Complete the Module 1 activity path
+FORMATIVE ASSESSMENT 1
+[AI-PROHIBITED • UNGRADED]
+Complete the Canvas quiz 
+independently after Module 1.
+Use the result as evidence of 
+current mastery.
+CLASS ACTIVITY 1
+[AI-INTEGRATED]
+Submit the AI methodology 
+comparison, verification, critique, 
+corrected conclusions, validation 
+record, and AI Use Disclosure.
+--- p48 ---
+Understand the system: purpose, parts, boundaries, environment,
+feedback, stakeholders, and organizational context.
+Analyze before designing: separate symptoms from root causes and
+connect evidence to expected value.
+Choose responsibly: compare and tailor development approaches;
+integrate ethics, security, privacy, accessibility, and responsible AI
+use.
+Move the proposal forward: carry the revised context, title logic,
+methodology rationale, and audit evidence into Module 2.
+Module 1 synthesis
+--- p49 ---
+REFERENCES
+--- p50 ---
+• Kendall, K. E., & Kendall, J. E. (2024). Systems analysis and design (11th 
+ed.). Pearson.
+• Tilley, S. (2025). Systems analysis and design (13th ed.). Cengage.
+• Valacich, J. S., & George, J. F. (2024). Modern systems analysis and 
+design (10th ed.). Pearson.
+• National Institute of Standards and Technology. (2022). Secure Software 
+Development Framework (SSDF), Version 1.1 (NIST SP 800-218).
+• World Wide Web Consortium. (2023). Web Content Accessibility 
+Guidelines (WCAG) 2.2.
+--- p51 ---
+CARRY YOUR REVISED PROJECT 
+CONTEXT
+INTO MODULE 2

@@ -1,0 +1,654 @@
+--- p1 ---
+INFORMATION
+REQUIREMENTS ANALYSIS
+--- p2 ---
+MODULE 3
+LEARNING OBJECTIVES
+--- p3 ---
+ILO 4: Elicit, analyze, prioritize, specify, validate, and trace
+stakeholder and system requirements using ethical and
+inclusive methods.
+CLO alignment: Build trustworthy requirements evidence for
+CLO 2 and CLO 3, then carry it into the progressive Title
+Proposal portfolio.
+What you will learn
+--- p4 ---
+DA 2 must be completed in Canvas before instruction; it maps readiness for Modules 3–4.
+Module 3 starts a new diagnostic cycle
+Refined
+proposal
+DA 2
+No AI
+Stakeholder
+evidence
+Validated
+requirements
+Module 4
+models
+Diagnostic results are ungraded. They guide adaptive practice and 
+targeted support—not course grades.
+--- p5 ---
+How do you know a requirement represents a 
+real stakeholder need—not an analyst’s 
+assumption?
+Question of understanding
+--- p6 ---
+STAKEHOLDER AND
+REQUIREMENTS EVIDENCE
+--- p7 ---
+The analyst converts stakeholder experience and organizational records into 
+defensible system needs.
+Requirements analysis is an evidence discipline
+Ask +
+observe
+Record
+evidence
+Compare +
+resolve
+Specify
+requirements
+Validate +
+trace
+A persuasive statement is not automatically a verified requirement.
+--- p8 ---
+Identify people who use, operate, approve, support, regulate, supply data to, or are 
+affected by the system.
+Stakeholders are defined by impact and knowledge
+Use
+Direct users
+Operate
+Process 
+owners
+Decide
+Sponsors + 
+approvers
+Support
+IT + service 
+teams
+Are affected
+Indirect + 
+vulnerable 
+groups
+Do not limit discovery to the loudest, easiest, or highest-ranking 
+participants.
+--- p9 ---
+Review stakeholder power, process knowledge, exposure to change, access 
+barriers, and potential harm.
+Inclusive discovery makes missing perspectives visible
+Lens Ask Risk if omitted
+Decision power Who can authorize or block? Unapproved requirements
+Process knowledge Who handles real exceptions? Incomplete workflow
+Change impact Whose work or rights change? Adoption or harm
+Access + inclusion Who may be underrepresented? Biased design
+--- p10 ---
+Start with the decision question, then select credible sources, methods, records, and 
+validation steps.
+Plan evidence before choosing a method
+Decision
+question
+Evidence
+needed
+Source +
+method
+Record +
+protect
+Validate +
+use
+Method choice should follow the evidence gap—not personal 
+convenience.
+--- p11 ---
+Interactive methods explain meaning; unobtrusive methods reveal actual records, 
+patterns, and conditions.
+Use interactive and unobtrusive methods together
+INTERACTIVE
+Interviews • workshops/JAD
+questionnaires • facilitated sessions
+Best for goals, meanings, exceptions, 
+conflict
+UNOBTRUSIVE
+Observation • documents • policies
+records • logs • analytics • scanning
+Best for behavior, volume, sequence, 
+and constraints
+Triangulation reduces dependence on any one person or 
+source.
+--- p12 ---
+Use interviews when depth matters and the analyst needs to follow the participant’s 
+experience.
+Interviews uncover goals, exceptions, and reasoning
+Strong use Evidence sought Watch for
+Process owner Rules + decisions Official view only
+Frontline user Workarounds + exceptions Single-user bias
+Support role Failures + recovery Technical jargon
+Affected person Access + impact Power imbalance
+--- p13 ---
+Prepare a consistent path while allowing relevant follow-up questions.
+A strong interview protocol protects focus and trust
+Purpose +
+consent
+Context +
+role
+Current
+workflow
+Exceptions +
+pain points
+Confirm +
+next steps
+Record date, participant role, version, approved notes, confidentiality level, 
+and unresolved questions.
+--- p14 ---
+Move from open questions to focused probes; avoid leading, double-barreled, and 
+solution-first wording.
+Good questions invite evidence instead of agreement
+WEAK
+“Wouldn’t an AI dashboard make 
+approvals faster and more 
+accurate?”
+STRONG
+“Walk me through the last approval. 
+Where did delay occur, and what 
+evidence was unavailable?”
+Useful probes: What happened next? How often? Show me an example. 
+Who decides? What changes in an exception?
+--- p15 ---
+Bring the right roles together to map the process, surface conflicts, agree 
+terminology, and record decisions.
+Workshops and JAD make differences discussable
+Shared
+purpose
+Current-state
+map
+Conflicts +
+gaps
+Candidate
+requirements
+Decisions +
+actions
+A workshop creates evidence only when contributions, decisions, dissent, and 
+follow-ups are documented.
+--- p16 ---
+Assign roles, time-box decisions, separate facts from proposals, and record 
+disagreement.
+Workshop controls protect evidence quality
+Role / control Responsibility Evidence produced
+Facilitator Neutral process + participation Agenda + discussion record
+Participants Domain evidence + review Examples + decisions
+Recorder Trace claims and changes Decision / issue log
+Approver Confirm agreed baseline Approval or conditions
+--- p17 ---
+Use them when many respondents can answer the same clearly defined questions 
+and coverage matters more than depth.
+Questionnaires scale comparable questions
+GOOD FIT
+Frequency • preference • satisfaction
+known categories • broad coverage
+Use follow-up interviews for 
+explanation
+POOR FIT
+Unfamiliar process • complex 
+exceptions
+ambiguous terminology • sensitive 
+issues
+A form cannot repair a weak question
+--- p18 ---
+Pilot each item before release and connect it to a defined analysis decision.
+Build clear, answerable questionnaires
+Quality check Weak item Better design
+Single idea Fast and secure? Separate speed and security
+Neutral wording How helpful is our excellent portal? How helpful is the portal?
+Complete options Daily / weekly / never Add monthly + other
+Recall period Usually In the last 30 days
+--- p19 ---
+Define the setting, task, events, timing, handoffs, artifacts, exceptions, and observer 
+boundaries.
+Observation reveals the work people actually perform
+Scope +
+permission
+Observe
+tasks
+Record
+events
+Ask brief
+clarifiers
+Validate the
+record
+Do not record sensitive screens, credentials, identities, or conversations 
+beyond the approved purpose.
+--- p20 ---
+Review forms, policies, reports, contracts, approval records, and data definitions.
+Documents reveal formal rules and expected evidence
+Inspect Learn Verify
+Forms + templates Required fields + handoffs Are fields used?
+Policies + rules Authority + constraints Is practice consistent?
+Reports + records Outputs + decisions Who relies on them?
+Definitions Meaning + ownership Are terms consistent?
+--- p21 ---
+Use approved samples to test volume, timing, frequency, error, exception, and data-
+quality claims.
+Records and logs reveal patterns people may not recall
+Source Possible evidence Safeguard
+Transaction records Volume + turnaround Minimize fields
+System logs Events + failures Protect identifiers
+Analytics Patterns + drop-offs Check definitions
+External scan Technology + policy change Verify authority
+--- p22 ---
+Collect only necessary information and state how it will be protected.
+Ethical discovery protects people and project credibility
+Consent
+Purpose + 
+choice
+Confidential
+Controlled 
+access
+Minimization
+Only needed 
+data
+De-identify
+Remove direct 
+identity
+Retention
+Keep only as 
+required
+Technical Activity 3 uses synthetic or de-identified information 
+only.
+--- p23 ---
+Select participants deliberately across roles, experience, workload, location, access 
+needs, and exception exposure.
+Stakeholder sampling must represent relevant variation
+PURPOSIVE SAMPLE
+Choose people because their role or 
+experience can answer a defined 
+evidence question.
+COVERAGE CHECK
+Ask which perspective, shift, 
+location, access need, or exception 
+remains absent.
+Sample size alone cannot correct a systematically missing stakeholder 
+group.
+--- p24 ---
+Keep facts, statements, interpretations, assumptions, and decisions separate.
+Classify claims before using them
+Class Meaning Example
+Observed fact Recorded event 7 of 20 forms lacked ID
+Reported fact Participant statement Reviewer reports rework
+Interpretation Analyst explanation Field wording may confuse
+Assumption Unverified belief All users have stable data
+Decision Approved direction Offline capture is in scope
+--- p25 ---
+Compare different people, methods, records, and time periods before accepting a 
+requirement.
+Triangulation strengthens or challenges a claim
+Interview
+“Approvals take 
+days”
+Records
+Median = 2.4 days
+Observation
+Delay at handoff
+Conclusion: specify handoff visibility and timing evidence—do not 
+assume automation alone solves delay.
+--- p26 ---
+Preserve the difference, identify context, seek authoritative rules, and escalate 
+decisions transparently.
+Conflicting evidence is a finding—not a failure
+Record both
+claims
+Locate the
+context
+Check rule +
+data
+Facilitate
+resolution
+Log decision 
++
+dissent
+Do not silently choose the statement that best fits the proposed solution.
+--- p27 ---
+Stop gathering only when important claims have coverage, credibility, consistency, 
+recency, and traceability.
+Evidence is sufficient when the decision risk is acceptable
+Check Question Warning sign
+Coverage Are key roles and cases included? Missing exception users
+Credibility Is the source positioned to know? Opinion treated as fact
+Consistency Do sources agree or explain differences? Unresolved conflict
+Recency Does evidence reflect current work? Obsolete policy
+--- p28 ---
+Capture actors, triggers, steps, decisions, handoffs, artifacts, exceptions, timing, 
+and pain points.
+Document the current workflow before proposing change
+Visitor
+submits
+Staff checks
+records
+Missing data?
+return request
+Reviewer
+verifies
+Status +
+referral
+Current-state documentation describes what happens now—including 
+workarounds—not the future design.
+--- p29 ---
+This chain turns complaints into evidence questions that can later justify 
+requirements.
+Connect pain points to information needs and sources
+Pain point Information needed Likely source Possible requirement direction
+Repeated returns Which fields are incomplete? Returned forms Validate required fields
+Unknown status Where does work wait? Timestamps + interviews Track stage + owner
+Inconsistent checks Which rules differ? Policy + reviewers Standardize decision rules
+--- p30 ---
+Case focus: incident reporting, evidence handling, validation, response support, and 
+accountable access.
+Cybersecurity: follow evidence across trust boundaries
+Stakeholder Evidence to gather Requirement direction
+Reporter Submission context + safety Protected evidence intake
+Validator Credibility checks + exceptions Traceable review status
+Responder Prioritization information Actionable verified alerts
+Security owner Threats + access duties Least privilege + audit
+--- p31 ---
+Case focus: visitor requests, guide verification, status communication, accessibility, 
+connectivity, and support.
+Web and mobile: study the complete service journey
+Stakeholder Evidence to gather Requirement direction
+Visitor Search + referral needs Clear verified information
+Tourism staff Review workflow + rules Consistent verification
+Guide/operator Submission + correction Transparent status
+Support team Devices + failures Accessible resilient service
+--- p32 ---
+Case focus: content accuracy, asset workflow, player experience, accessibility, 
+device limits, and facilitation.
+Animation and game development: creation and play
+Stakeholder Evidence to gather Requirement direction
+Learner/player Goals + barriers + safety Accessible feedback
+Designer/artist Asset pipeline + versions Reviewable production flow
+Subject expert Accuracy + approvals Content validation
+Facilitator/support Deployment + recovery Operable session controls
+--- p33 ---
+Case focus: data ownership, definitions, lineage, quality, access, interpretation, and 
+decision responsibility.
+Business analytics: begin before the dashboard
+Stakeholder Evidence to gather Requirement direction
+Data owner Authority + sensitivity Approved access
+Data steward Definitions + quality Validated data rules
+Analyst Transformations + assumptions Traceable lineage
+Decision-maker Questions + thresholds Explainable indicators
+--- p34 ---
+Can another analyst trace every important claim to a 
+protected source, understand unresolved conflicts, 
+and see what must still be validated?
+Evidence-pack quality gate
+--- p35 ---
+REQUIREMENTS ENGINEERING
+AND VALIDATION
+--- p36 ---
+Move from verified need to specification, priority, acceptance, validation, and 
+downstream analysis.
+A requirement must remain connected to evidence
+Stakeholder
+evidence
+Need +
+rationale
+Requirement
+statement
+Acceptance
+criteria
+Trace +
+validate
+If the evidence changes, the requirement and every linked artifact 
+must be reviewed.
+--- p37 ---
+Classify each statement so missing quality, data, interface, security, privacy, and 
+rule needs stay visible.
+Requirements describe different kinds of obligation
+Type Question answered Example direction
+Functional What must the system do? Record a review decision
+Data + interface What information and exchange? Validate credential fields
+Quality How well must it perform? Return status within target
+Security + privacy What protection is required? Restrict evidence access
+Rule + constraint What condition or limit applies? Retention follows policy
+--- p38 ---
+Check correctness, necessity, consistency, clarity, verifiability, and traceability.
+Good requirements are clear, feasible, and testable
+Correct
+Matches 
+evidence
+Necessary
+Supports 
+value
+Unambiguous
+One meaning
+Feasible
+Possible in 
+context
+Verifiable
+Can be 
+checked
+Traceable
+Has links
+A grammatically polished sentence can still be unnecessary, unsafe, 
+or unsupported.
+--- p39 ---
+Rewrite ambiguous statements by naming the actor, behavior, object, condition, 
+threshold, and verification method.
+Replace vague adjectives with observable conditions
+AMBIGUOUS
+“The system should quickly notify 
+authorized users about important 
+updates.”
+TESTABLE
+“When a verification status changes, 
+the system shall notify the assigned 
+reviewer within 60 seconds and log 
+delivery status.”
+Words to challenge: easy • fast • secure • robust • user-friendly • real-time • 
+appropriate • seamless
+--- p40 ---
+The story expresses a goal from a user perspective, while the criteria define 
+observable completion.
+A user story states value; acceptance criteria bound it
+As a tourism reviewer, I want incomplete guide submissions flagged 
+before review so that avoidable returns are reduced.
+Acceptance direction
+• Required fields are checked before submission.
+• Missing fields are identified beside the relevant entry.
+• The submission is not forwarded until errors are resolved.
+--- p41 ---
+User stories, use cases, shall-statements, business rules, and constraints are 
+complementary—not interchangeable.
+Choose the specification form that serves the decision
+Form Best use Core structure
+User story User value + backlog Role • goal • benefit
+Use case Actor-system interaction Trigger • flow • outcomes
+Shall-statement Precise obligation Actor/system • action • condition
+Business rule Decision or policy logic If / then or rule statement
+Constraint Mandatory boundary Platform • law • time • scope
+--- p42 ---
+Write concrete preconditions, trigger, expected behavior, limits, and exception 
+outcomes.
+Acceptance criteria must cover success and failure
+Scenario Given When Then
+Valid submission Required fields complete User submits Create record + status
+Missing evidence Credential file absent User submits Block + identify field
+Unauthorized access User lacks reviewer role User opens evidence Deny + log attempt
+--- p43 ---
+Classify requirements by necessity and evidence—not by who argues most strongly.
+MoSCoW prioritization protects the essential outcome
+MUST
+Without it, the 
+release fails
+SHOULD
+Important; 
+workaround exists
+COULD
+Useful if capacity 
+remains
+WON’T YET
+Explicitly deferred
+Every MUST needs a defensible failure consequence and acceptance 
+evidence.
+--- p44 ---
+Review conflicts, assumptions, prerequisites, and consequences before sequencing 
+work.
+Value, risk, and dependencies change priority
+Requirement Value Risk if absent Dependency / conflict Decision
+Validate credentials High Invalid referrals Needs rule owner Must
+Offline capture High Service interruption Conflicts with live checks Should / analyze
+AI recommendations Unclear Bias + trust Needs evidence + oversight Won’t yet
+--- p45 ---
+The product quality model provides nine characteristics for specifying, measuring, 
+and evaluating quality.
+Use ISO/IEC 25010:2023 to check quality coverage
+Quality focus A Quality focus B Quality focus C
+Functional suitability Performance efficiency Compatibility
+Interaction capability Reliability Security
+Maintainability Flexibility Safety
+Select characteristics relevant to verified stakeholders and context; do not copy all 
+nine mechanically.
+--- p46 ---
+State the context, measure, threshold, evidence source, and acceptance method.
+Turn quality goals into measurable requirements
+VAGUE QUALITY
+“The system shall be secure, reliable, 
+fast, and user-friendly.”
+MEASURABLE QUALITY
+“Under the agreed test load, 95% of 
+status queries shall complete within 
+two seconds, measured from 
+timestamped test logs.”
+Pattern: context + system behavior + threshold + measure + verification 
+evidence
+--- p47 ---
+Start with assets, data, threats, trust boundaries, duties, and scope before naming 
+controls.
+Derive security and privacy requirements from context
+Asset +
+data
+Threat +
+misuse
+Duty +
+scope
+Protection
+requirement
+Acceptance +
+trace
+Example: because evidence files contain sensitive identifiers, only assigned 
+reviewers may access them, and every access attempt must be logged.
+--- p48 ---
+A requirement change must show its reason, source, impact, decision, owner, 
+version, and linked updates.
+Change control keeps the baseline trustworthy
+Change
+request
+Evidence +
+rationale
+Impact
+analysis
+Approve /
+reject
+Update +
+communicate
+Impact review includes scope, objectives, models, data, security, privacy, 
+feasibility, schedule, acceptance, and traceability.
+--- p49 ---
+Use reviews, walkthroughs, scenarios, prototypes, acceptance checks, and 
+stakeholder confirmation.
+Validation asks whether the right requirements are specified
+Validation question Method Evidence
+Correct and necessary? Stakeholder review Confirmed need
+Complete and consistent? Peer inspection Defect log
+Understandable? Scenario walkthrough Clarified wording
+Testable and feasible? Acceptance review Measure + conditions
+--- p50 ---
+Version the specification so teams know what is current, changed, and approved.
+A baseline is an approved, controlled reference
+Version State Change Decision evidence
+0.1 Draft Initial elicitation Interview + records
+0.2 Reviewed Clarified exceptions Workshop log
+1.0 Baselined Approved Module 3 set Validation sign-off
+1.1 Controlled change Policy update Impact + approval
+--- p51 ---
+A requirement should be explainable backward, forward, across related items, and 
+between levels.
+Traceability must work in four directions
+REQUIREMENT
+R-03
+BACKWARD
+Evidence • need • 
+objective
+FORWARD
+Model • design • test
+ACROSS + BETWEEN 
+LEVELS
+Dependencies • rules • 
+derived requirements
+--- p52 ---
+Maintain identifiers and links from evidence through acceptance and downstream 
+models.
+The RTM makes requirement coverage inspectable
+ID Source / need Requirement Priority Acceptance Model / status
+R-03 INT-02 + LOG-04 Track stage + owner Must Status updates logged DFD-1 / Validated
+SEC-02 DATA-01 + threat Restrict evidence access Must Unauthorized access denied UC-4 / Reviewed
+NFR-01 OBS-03 95% queries ≤ 2 s Should Load-test timestamps Pending baseline
+--- p53 ---
+Stakeholders confirm meaning and value; peers inspect quality, consistency, 
+feasibility, acceptance, and trace links.
+Validation is a structured conversation with evidence
+Prepare
+baseline
+Walk through
+scenarios
+Record
+defects
+Resolve +
+approve
+Update RTM +
+version
+Silence is not approval. Record who reviewed, what was accepted, what 
+changed, and what remains unresolved.
+--- p54 ---
+Use synthetic or de-identified information, validate every suggestion, revise the 
+work, and disclose AI use.
+AI may challenge requirements—but cannot invent evidence
+Sanitize the
+brief
+Role-play +
+critique
+Detect 
+invented /
+ambiguous 
+claims
+Verify + 
+accept
+or reject
+Revise +
+disclose
+Submit prompts and outputs, critique and validation, accepted and rejected 
+recommendations, corrected requirements and RTM entries, and the AI Use Disclosure.
+--- p55 ---
+Formative Assessment 3 [AI-Prohibited]: Complete the ungraded Canvas
+quiz independently after Module 3.
+Class Activity 3 [AI-Integrated]: Complete the AI Stakeholder and
+Requirements Audit using synthetic or de-identified information, validation
+records, and an AI Use Disclosure.
+Summative Assessment 2: Occurs after Module 4 and covers Modules 3–4.
+Module 3 activity path
+--- p56 ---
+Stakeholder register and ethical evidence plan
+Interview, workshop, questionnaire, observation, document, or log evidence 
+records
+Current-state workflow, pain points, information needs, and data sources
+Prioritized requirements with acceptance criteria, baseline, version, and 
+traceability
+AI Stakeholder and Requirements Audit with validation and disclosure
+Module 3 portfolio checkpoint
+--- p57 ---
+REFERENCES
+--- p58 ---
+• Kendall, K. E., & Kendall, J. E. (2024). Systems analysis and design (11th ed.). Pearson.
+• Tilley, S. (2025). Systems analysis and design (13th ed.). Cengage.
+• Valacich, J. S., & George, J. F. (2024). Modern systems analysis and design (10th ed.). Pearson.
+• Project Management Institute. (2024). Business analysis for practitioners: A practice guide (2nd ed.).
+• ISO/IEC. (2023). ISO/IEC 25010:2023 — Product quality model. https://www.iso.org/standard/78176.html
+--- p59 ---
+VALIDATE THE REQUIREMENTS.
+THEN MAKE THE SYSTEM VISIBLE.

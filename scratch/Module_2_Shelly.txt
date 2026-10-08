@@ -1,0 +1,347 @@
+--- p1 ---
+Systems Analysis & Design
+7th Edition
+Chapter 2
+--- p2 ---
+• Systems planning is the first of five phases in the systems 
+development life cycle (SDLC)
+• In this phase, you will learn how IT projects get started and how 
+a systems analyst evaluates a proposed project and determines 
+its feasibility
+Phase Description
+--- p3 ---
+MODULE 2
+LEARNING OBJECTIVES
+--- p4 ---
+Chapter Objectives 
+• Explain the concept of a business case and how a business case 
+affects an IT project
+• Describe the strategic planning process and why it is important 
+to the IT team
+• Explain the purpose of a mission statement
+• Describe the SDLC, and explain how it serves as a framework for 
+systems development and business modeling 
+• Describe risks and risk management features 
+• List the reasons for information systems projects and the factors 
+that affect such projects
+--- p5 ---
+Chapter Objectives
+• Explain the initial review of systems requests and the role of the 
+systems review committee 
+• Define operational feasibility, technical feasibility, economic 
+feasibility, and schedule feasibility 
+• Describe the steps in a preliminary investigation and the end 
+product of an investigation
+--- p6 ---
+Introduction
+• The term business case refers to the reasons, or justification, for 
+a proposal
+• Systems development typically starts with a systems request, 
+followed by a preliminary investigation, which includes a 
+feasibility study
+--- p7 ---
+Strategic Planning – A Framework for IT 
+Systems Development 
+• Strategic planning is the process of identifying long-term 
+organizational goals, strategies, and resources 
+• Strategic Planning Overview
+• SWOT analysis
+--- p8 ---
+Strategic Planning – A Framework for IT 
+Systems Development 
+• From Strategic Plans to Business Results
+• Mission statement
+• Stakeholders
+• Goals
+• Objectives
+--- p9 ---
+Strategic Planning – A Framework for IT 
+Systems Development 
+• A Business Example
+• Critical success factors 
+• Critical business issues 
+• Case for action
+--- p10 ---
+Strategic Planning – A Framework for IT 
+Systems Development 
+• The Role of the IT Department in Project 
+Evaluation
+• Management leadership and information technology 
+are linked closely, and remarkable changes have 
+occurred in both areas
+• Today, systems development is much more team 
+oriented
+• Although team-oriented development is the norm, 
+some companies see the role of the IT department as 
+a gatekeeper
+--- p11 ---
+Strategic Planning – A Framework for IT 
+Systems Development 
+• The Future
+• If you could look into the future, here is what you might see: New
+industries, products, and services emerging from amazing advances in
+information technology, customers who expect world-class IT support, a
+surge in Internet-based commerce, and a global business environment
+that is dynamic and incredibly challenging
+--- p12 ---
+What Is a Business Case?
+• Should be comprehensive, yet easy to understand
+• Should describe the project clearly, provide the justification to 
+proceed, and estimate the project’s financial impact
+--- p13 ---
+• Main Reasons for Systems Projects
+• Systems request 
+• Improved service
+• Support for new products and services
+• Better performance
+• More information
+Information Systems Projects
+--- p14 ---
+Information Systems Projects
+• Main Reasons for Systems Projects
+• Stronger controls
+• Encryption and biometric devices
+• Reduced cost
+• Factors that Affect Systems Projects
+• Internal and external factors affect every business decision that a 
+company makes, and IT systems projects are no exception
+--- p15 ---
+Information Systems Projects
+• Internal Factors
+• Strategic plan
+• Top managers
+• User requests
+• Information technology department
+• Existing systems and data
+--- p16 ---
+Information Systems Projects
+• External Factors 
+• Technology
+• Electronic product 
+code (EPC)
+• Suppliers
+• Just-in-time (JIT)
+
+--- p17 ---
+Information Systems Projects
+• External Factors
+• Customers
+• Customer Relationship Management (CRM)
+• Electronic proof of delivery (EPOD)
+• Competitors
+• The economy
+• Government
+--- p18 ---
+Information Systems Projects
+• Project Management Tools
+• All IT projects, large and small, must be managed 
+and controlled
+• Project management begins with a systems 
+request, and continues until the project is 
+completed or terminated
+• Risk Management
+• Every IT project involves risks that system analysts 
+and IT project managers must address
+• Risk management
+--- p19 ---
+Evaluation of Systems Requests
+• Systems review committee 
+• Computer  resources committee
+• Systems Requests Forms
+
+--- p20 ---
+Evaluation of Systems Requests
+• Systems Review Committees
+• Most large companies use a systems review committee to evaluate 
+systems requests
+• Many smaller companies rely on one person to evaluate system 
+requests instead of a committee
+• The goal is to evaluate the requests and set priorities
+--- p21 ---
+• A systems request must pass 
+several tests, called a 
+feasibility study, to see 
+whether it is worthwhile to 
+proceed further
+Overview of Feasibility
+--- p22 ---
+Overview of Feasibility
+• Technical Feasibility
+• Technical feasibility refers to technical resources needed to develop, 
+purchase, install, or operate the system 
+• Economic Feasibility
+• Total cost of ownership (TCO)
+• Tangible benefits
+• Intangible benefits
+• Schedule Feasibility
+--- p23 ---
+Evaluating Feasibility
+• The first step in evaluating feasibility is to identify and weed out 
+systems requests that are not feasible
+• Even if the request is feasible, it might not be necessary
+• Feasibility analysis is an ongoing task that must be performed 
+throughout the systems development process
+--- p24 ---
+Setting Priorities
+• Factors that Affect Priority
+• Will the proposed system reduce costs? Where? When? How? How 
+much?
+• Will the system increase revenue for the company? Where? When? 
+How? How much?
+--- p25 ---
+Setting Priorities
+• Factors that Affect Priority
+• Will the systems project result in more information or produce better 
+results? How? Are the results measurable?
+• Will the system serve customers better?
+• Will the system serve the organization better?
+--- p26 ---
+Setting Priorities
+• Factors that Affect Priority
+• Can the project be implemented in a reasonable time period? How long 
+will the results last?
+• Are the necessary financial, human, and technical resources available? 
+• Whenever possible, the analyst should evaluate a proposed project based 
+on tangible costs and benefits that represent actual (or approximate) 
+dollar values 
+--- p27 ---
+Setting Priorities
+• Discretionary and Nondiscretionary Projects
+• Projects where management has a choice in implementing them are 
+called discretionary projects
+• Projects where no choice exists are called nondiscretionary projects
+--- p28 ---
+Preliminary Investigation Overview
+• Preliminary investigation
+• Interaction with Managers and Users
+
+--- p29 ---
+Preliminary Investigation Overview
+• Planning the Preliminary Investigation
+• During a preliminary investigation, a systems analyst typically follows a 
+series of steps
+• The exact procedure depends on the nature of the request, the size of 
+the project, and the degree of urgency
+--- p30 ---
+Preliminary Investigation Overview
+• Step 1:  Understand the 
+Problem or Opportunity
+• A popular technique for 
+investigating causes and effects 
+is called a fishbone diagram, or 
+Ishikawa diagram
+• Pareto chart
+--- p31 ---
+Preliminary Investigation Overview
+• Step 2:  Define the Project Scope and Constraints
+• Project scope 
+• Project creep
+• Constraint
+• Present versus future
+--- p32 ---
+Preliminary Investigation Overview
+• Step 2:  Define the Project Scope and Constraints
+• Present versus future
+• Internal versus external
+• Mandatory versus desirable
+• Regardless of the type, all constraints should be identified as early as 
+possible to avoid future problems and surprises 
+--- p33 ---
+Preliminary Investigation Overview
+• Step 3:  Perform Fact-
+Finding
+• Fact-finding involves 
+various techniques
+• Fact-finding might 
+consume several hours, 
+days, or weeks
+• Analyze Organization 
+Charts
+--- p34 ---
+Preliminary Investigation Overview
+• Step 3:  Perform Fact-Finding
+• Conduct interviews
+• Determine the people to interview
+• Establish objectives for the interview
+• Develop interview questions
+• Prepare for the interview
+• Conduct the interview
+• Document the interview
+• Evaluate the interview
+--- p35 ---
+Preliminary Investigation Overview
+• Step 3:  Perform Fact-Finding
+• Review documentation
+• Observe operations
+• Conduct a user survey
+• Step 4:  Evaluate Feasibility
+• Evaluate the project’s operational, technical, economic, and schedule 
+feasibility
+--- p36 ---
+Preliminary Investigation Overview
+• Step 5:  Estimate Project Development Time and Cost
+• What information must you obtain, and how will you gather and analyze the 
+information?
+• What sources of information will you use, and what difficulties will you 
+encounter in obtaining information?
+--- p37 ---
+Preliminary Investigation Overview
+• Step 5:  Estimate Project Development Time and Cost
+• Will you conduct interviews? How many people will you interview, and 
+how much time will you need to meet with the people and summarize 
+their responses?
+• Will you conduct a survey? Who will be involved? How much time will it 
+take people to complete it? How much time will it take to prepare it and 
+tabulate the results?
+--- p38 ---
+Preliminary Investigation Overview
+• Step 5:  Estimate Project Development Time and Cost
+• How much will it cost to analyze the information gathered and to 
+prepare a report with findings and recommendations? 
+• You should provide an estimate for the overall project, so managers can 
+understand the full cost impact and timetable
+• Step 6:  Present Results and Recommendations to Management
+• The final task in the preliminary investigation is to prepare a report to 
+management
+• The format of the preliminary investigation report varies from one 
+company to another
+--- p39 ---
+Preliminary Investigation Overview
+• Step 6:  Present Results and Recommendations to Management
+• Introduction
+• Systems request summary
+• Findings
+• Recommendations
+• Project Roles
+• Time & cost estimates
+• Expected benefits
+• Appendix
+--- p40 ---
+CHAPTER SUMMARY
+--- p41 ---
+Chapter Summary
+• Systems planning is the first phase of the systems development life 
+cycle
+• Effective information systems help an organization support its 
+business process, carry out its mission, and serve its stakeholders
+• Strategic planning allows a company to examine its purpose, vision, 
+and values and develops a mission statement, which leads to goals, 
+objectives, day-to-day operations, and business results that affect 
+company stakeholders
+• Systems projects are initiated to improve performance, provide more 
+information, reduce costs, strengthen controls, or provide better 
+service
+--- p42 ---
+Chapter Summary
+• Various internal and external factors affect systems projects
+• During the preliminary investigation, the analyst evaluates the 
+systems request and determines whether the project is from an 
+operation, technical, economic, and schedule standpoint
+• Analysts evaluate systems requests on the basis of their expected 
+costs and benefits, both tangible and intangible
+• The steps in the preliminary investigation are to understand the 
+problem or opportunity; define the project scope and constraints; 
+perform fact-finding; estimate the project’s benefits; estimate project 
+development time and cost; and present results and 
+recommendations to management
+--- p43 ---

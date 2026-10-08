@@ -1,0 +1,754 @@
+--- p1 ---
+THE ANALYSIS PROCESS
+STRUCTURED AND OBJECT-
+ORIENTED MODELING
+--- p2 ---
+MODULE 4
+LEARNING OBJECTIVES
+--- p3 ---
+ILO 5: Create, validate, and reconcile structured, object-
+oriented, process, data, and behavioral analysis models.
+CLO alignment: Demonstrate CLO 3 and CLO 4 by producing
+accurate, consistent, specialization-appropriate, and traceable
+models for the progressive Title Proposal portfolio.
+What you will learn
+--- p4 ---
+The midterm covers Modules 1–3; this module converts Module 3 requirements into 
+visible, reviewable analysis models.
+Module 4 begins with a validated requirements baseline
+Evidence +
+requirements
+Midterm
+checkpoint
+Structured
+models
+Object-oriented
+models
+Consistent
+model set
+Do not model assumptions as facts. Every major process, actor, data 
+object, and rule must trace backward to validated evidence.
+--- p5 ---
+If two diagrams describe the same system but 
+tell different stories, which one should the 
+team trust?
+Question of understanding
+--- p6 ---
+Each model answers a different question; consistency makes the combined 
+explanation trustworthy.
+One system needs several connected views
+Context +
+DFD
+Data
+dictionary
+Process
+logic UML behavior Domain /
+data model
+Requirements and the RTM connect every view to stakeholder 
+evidence, acceptance criteria, and the project scope.
+--- p7 ---
+STRUCTURED ANALYSIS AND
+LOGICAL MODELING
+--- p8 ---
+Separate what information moves and transforms from decisions about software, 
+hardware, database products, screens, or code.
+Logical models focus on required behavior
+LOGICAL
+What must happen?
+What information is needed?
+Who or what exchanges it?
+Which rules govern it?
+PHYSICAL
+Which technology?
+Which screen or service?
+Which database or device?
+Which deployment choice?
+Module 4 begins with the logical view; solution design follows in 
+later modules.
+--- p9 ---
+It shows the system boundary, external entities, and the named data flows that cross 
+that boundary.
+A context diagram defines the system as one process
+Include Purpose Exclude
+One system process Name the system being analyzed Internal subprocesses
+External entities Show sources and destinations Internal data stores
+Boundary data flows Show information crossing scope Control flow or technology
+--- p10 ---
+Place an activity inside the system only when the proposed solution is responsible 
+for transforming or storing its information.
+Boundary decisions determine what the project promises
+Boundary question Inside when… Outside when…
+Who performs it? The system executes the behavior A person or external service acts
+Who controls it? The project owns the logic Another organization controls it
+What is exchanged? Information is transformed internally Only an interface contract is known
+What is committed? Included in approved scope Future or dependency scope
+--- p11 ---
+The system is one process; applicants, reviewers, and the credential provider remain 
+external.
+Worked context: Tour Guide Verification System
+Applicant TOUR GUIDE
+VERIFICATION SYSTEM Reviewer
+Credential provider
+application
+status
+review queue
+decision
+--- p12 ---
+Choose one notation family and apply it consistently; meaning matters more than 
+decorative variation.
+A DFD uses four core symbol types
+PROCESS
+Transforms data
+Verb + noun
+DATA FLOW
+Moves information
+Noun phrase
+DATA STORE
+Retains 
+information
+Plural noun
+EXTERNAL 
+ENTITY
+Source or 
+destination
+Role / 
+organization
+A DFD models data movement and transformation—not timing, user-
+interface layout, or program sequence.
+--- p13 ---
+Use verb–noun phrases for processes and precise noun phrases for flows, stores, 
+and external entities.
+DFD names should explain meaning at a glance
+Element Weak name Stronger name
+Process Handle data Validate credential
+Data flow Information Credential evidence
+Data store Database Guide applications
+External entity User Tourism reviewer
+--- p14 ---
+This deck uses Context → Level 0 → Level 1; some references number the first 
+decomposition differently, so label the convention explicitly.
+Use one leveling convention throughout the project
+CONTEXT
+One system
+LEVEL 0
+Major 
+processes
+LEVEL 1
+One process 
+expanded
+LOWER LEVEL
+Only if needed
+PRIMITIVE
+Logic specified
+Decompose for understanding—not to produce the largest 
+possible diagram.
+--- p15 ---
+The context process is decomposed while preserving the external flows that cross 
+the system boundary.
+Level 0 reveals the major logical processes
+Applicant
+1.0
+Capture
+application
+2.0
+Verify
+evidence
+3.0
+Record
+decision
+Reviewer
+D1  Guide applications
+This teaching view is simplified; teams must add all validated flows required by 
+their case.
+--- p16 ---
+Process 2.0 is decomposed into internal steps while its parent inputs and outputs 
+remain visible.
+Level 1 preserves the parent contract
+2.1
+Check 
+completeness
+2.2
+Validate 
+identity
+2.3
+Check rules
+2.4
+Prepare finding
+Return
+finding
+Parent input: credential evidence  |  Parent output: verification finding  |  
+Internal flows may be added.
+--- p17 ---
+Every external input and output of the parent process must reappear in the child 
+diagram with the same meaning.
+Balancing preserves the parent process contract
+Parent 2.0 Child Level 1 Balanced?
+Credential evidence → Credential evidence → 2.1 Yes
+Verification finding → 2.4 → Verification finding Yes
+No alert output 2.3 → Security alert No: new external flow
+Internal child flows do not need to appear on the parent; new boundary flows 
+do.
+--- p18 ---
+Compare the parent contract with the proposed child diagram before evaluating the 
+internal logic.
+Balancing lab: find the defect
+PARENT 3.0
+Inputs
+• verification finding
+• reviewer decision
+Output
+• recorded status
+CHILD 3.x
+Inputs
+• verification finding
+Outputs
+• recorded status
+• applicant notification
+Defects: the reviewer decision disappeared, and applicant notification was introduced 
+without a parent flow.
+--- p19 ---
+Define its contents in the data dictionary and confirm that a process creates, 
+transforms, or consumes it.
+A data flow names information—not an action or channel
+Check Weak Better
+Meaning Send Verification finding
+Contents Data Guide ID + rule results + status
+Direction Unclear arrows Named source and destination
+Channel Email flow Notification content
+--- p20 ---
+Name the logical collection and show at least one process that writes or updates it 
+and one that reads it when required.
+Data stores retain information for later use
+Rule Valid example Defect to avoid
+Logical name Guide applications MySQL database
+Created or updated 1.0 → D1 Entity → D1 directly
+Read for purpose D1 → 2.0 Store with no consumer
+Dictionary link D1 structure defined Undefined fields
+--- p21 ---
+Name the role, organization, device, or external system that originates or receives 
+information across the boundary.
+External entities sit outside the system boundary
+Question Strong answer Weak shortcut
+Who or what? Tourism reviewer User
+Why external? Human decision remains outside Because the diagram is full
+What crosses? Decision + rationale Click
+Duplicate roles? Merge only if flows and goals match Merge by convenience
+--- p22 ---
+Expand only enough to expose decisions, transformations, stores, and exception 
+handling required for validation.
+Decompose a process when its internal logic hides 
+important work
+Parent
+process
+Identify
+subtasks
+Preserve
+external flows
+Add internal
+flows + stores
+Validate +
+balance
+Stop when a process can be specified clearly with structured English, a 
+decision table, a decision tree, or a business rule reference.
+--- p23 ---
+It has one coherent responsibility, defined inputs and outputs, known rules, and 
+logic that can be reviewed without another DFD level.
+A primitive process is detailed enough to specify
+Primitive-process test Ready Needs decomposition
+Responsibility One transformation Several unrelated outcomes
+Rules Logic can be written Rules remain hidden
+Data Inputs and outputs defined Unknown data content
+Traceability Links to requirements No supporting requirement
+--- p24 ---
+Every data flow must involve a process when information is created, transformed, 
+validated, routed, or stored.
+DFD rules prevent impossible data movement
+Invalid pattern Why invalid Correction
+Entity → entity System does no transformation Insert a responsible process
+Store → store No process controls movement Add a transfer process
+Entity → store External actor bypasses system logic Capture through a process
+Black hole / miracle Outputs or inputs lack explanation Add required flows or rules
+--- p25 ---
+A technically neat diagram can still omit a stakeholder, exception, rule, data need, or 
+requirement.
+Validate a DFD for meaning—not only notation
+BOUNDARY
+Does scope 
+match
+the proposal?
+COVERAGE
+Do all key flows
+appear?
+BALANCE
+Do levels 
+preserve
+contracts?
+MEANING
+Do names 
+match
+the dictionary?
+TRACE
+Does each 
+element
+have a reason?
+A walkthrough should use real scenarios, including exceptions and 
+unauthorized or invalid conditions.
+--- p26 ---
+Define every important element, structure, flow, store, alias, domain, and metadata 
+rule once—then reuse the definition consistently.
+The data dictionary is the shared vocabulary behind the 
+models
+Name +
+meaning
+Composition +
+format
+Domain +
+validation
+Owner +
+source
+Model +
+requirement 
+links
+If two diagrams use the same term differently, the data dictionary 
+should expose the conflict.
+--- p27 ---
+Record its meaning, source, type or format, allowed domain, required status, 
+sensitivity, and related rules.
+A data element definition must be precise enough to 
+validate
+Field Example: guide_status Why it matters
+Definition Current review disposition Prevents meaning drift
+Domain Draft | Submitted | Verified | Rejected Supports validation
+Owner Tourism review lead Assigns authority
+Sensitivity Internal operational Guides protection
+--- p28 ---
+Use a readable notation and define optional, repeating, and alternative groups 
+consistently.
+Data structures define flows and stores
+Structure Composition Interpretation
+Guide application applicant + credentials + contact Required groups
+Credentials {credential}1..* One or more repeating items
+Contact email + [mobile] Mobile is optional
+Decision verified | rejected | returned One allowed alternative
+--- p29 ---
+Record alternate labels, valid values, lineage, ownership, update frequency, quality 
+rules, sensitivity, and retention where relevant.
+Aliases, domains, and metadata resolve hidden ambiguity
+Dictionary control Example Conflict prevented
+Alias guide ID = accreditation number Different names for one field
+Domain status ∈ approved values Uncontrolled labels
+Lineage provider response → finding Unknown origin
+Metadata owner, timestamp, sensitivity Unmanaged data
+--- p30 ---
+The flow, store, and elements should use the same names and composition across 
+every model and requirement link.
+Worked dictionary entries must agree with the DFD
+Name Type Definition / composition Trace
+Credential evidence Data flow guide ID + credential set R-04
+Guide applications Data store application + status + history R-02, R-07
+review_decision Element Verified | Rejected | Returned BR-03
+Verification finding Structure rule results + rationale + time R-05
+--- p31 ---
+State its purpose, trigger, inputs, outputs, preconditions, postconditions, normal 
+logic, exceptions, and linked rules.
+A process specification explains one primitive process
+P-SPEC field Process 2.2 Validate identity
+Trigger Complete credential evidence received
+Input / output Evidence → identity result
+Precondition Applicant and credential IDs are present
+Normal logic Compare identifiers with approved provider response
+Exception Provider unavailable → pending review
+--- p32 ---
+Use a limited vocabulary, clear indentation, defined data names, and explicit 
+decisions or repetition.
+Structured English makes process logic explicit
+IF credential evidence is complete
+IF provider response matches applicant identity
+SET identity result to VALID
+ELSE
+SET identity result to REVIEW REQUIRED
+ELSE
+SET identity result to INCOMPLETE
+END IF
+Use dictionary terms exactly; do not hide a new requirement inside the logic.
+--- p33 ---
+List conditions, enumerate relevant combinations, assign actions, and remove 
+impossible or equivalent rules carefully.
+Decision tables expose combinations that prose often 
+misses
+Condition / action Rule 1 Rule 2 Rule 3 Rule 4
+Complete evidence? Y Y N N
+Identity matches? Y N – –
+Provider available? Y Y Y N
+Verify X
+Review required X X
+Pending X
+--- p34 ---
+Use them when the sequence of conditions matters and reviewers need to see how 
+one decision leads to the next.
+Decision trees clarify the order of nested decisions
+Evidence
+complete?
+YES
+NO
+Identity
+matches?
+Request
+completion
+Verify
+Review 
+required
+--- p35 ---
+Structured English, decision tables, and decision trees are complementary; the 
+primitive process determines the best form.
+Choose the logic representation that best exposes the rule
+Use Best when Watch for
+Structured English Sequence and limited branching Ambiguous terms
+Decision table Many condition combinations Missing or impossible rules
+Decision tree Order of decisions matters Repeated branches
+Rule reference Authoritative policy already defines logic Outdated or inaccessible source
+--- p36 ---
+Each rule needs an identifier, statement, authority, effective scope, owner, related 
+requirements, and affected model logic.
+Business rules must remain traceable and owned
+Rule Statement Authority Model link
+BR-03 A reviewer records one disposition per review cycle Review policy P3.0 / UC-04
+BR-05 Rejected evidence includes a reason code Service standard P3.2 / AC-07
+BR-08 Only assigned reviewers may decide Access policy UC-04 / SEC-02
+--- p37 ---
+A model element without a requirement may be scope invention; a requirement 
+without a model link may be missing from the analysis.
+Traceability connects evidence, requirements, and model 
+elements
+Stakeholder
+evidence
+Requirement
+R-04
+DFD process
+2.0
+P-SPEC +
+rule
+UML +
+acceptance
+Update the RTM with model identifiers so reviewers can move backward 
+and forward through the reasoning.
+--- p38 ---
+Review one diagram at a time, then compare its names, flows, rules, and scope with 
+the rest of the model set.
+Defect hunt: find the model that cannot be true
+Defect Evidence Correction
+Unbalanced flow Child adds security alert Add parent flow or remove invention
+Undefined data Status has no dictionary domain Define allowed values
+Logic mismatch Table permits action the P-SPEC rejects Resolve the governing rule
+Scope drift DFD includes payment not in requirements Remove or approve change
+--- p39 ---
+Use naming standards, layers, alignment, version labels, comments, export settings, 
+and a review checklist before baselining any model.
+Diagramming tools support discipline—but do not 
+guarantee correctness
+Select
+notation
+Apply naming
+standard
+Model +
+version
+Validate +
+peer review
+Export +
+trace
+A CASE or diagramming tool can draw an invalid model perfectly. Rules and 
+cross-model review remain the analyst’s responsibility.
+--- p40 ---
+Keep the operational transaction visible while tracing sensitive data, trust crossings, 
+validation findings, and authorized decisions.
+Cybersecurity: model protected flows and decision 
+responsibility
+Model focus Example Quality question
+External entity Reporter / identity provider / responder Is the role truly outside?
+Data flow Incident evidence / validation result Is sensitivity defined?
+Process Validate report / authorize response Who owns the decision?
+Store Evidence record / audit history Who may read or update?
+--- p41 ---
+Represent client input, validation, backend processing, notifications, offline or retry 
+conditions, and external service dependencies logically.
+Web and mobile: model the complete service journey
+View Example Consistency check
+Context Applicant ↔ service platform ↔ reviewer Boundary matches scope
+DFD Submit → validate → review → notify Flows balance across levels
+Dictionary submission, status, error response API and model terms agree
+P-SPEC Retry, validation, and failure rules Exception behavior is explicit
+--- p42 ---
+Separate asset-production flows, content approval, player events, progression data, 
+safety checks, and operational support.
+Animation and game development: model creation and play
+Process area Data movement Rule or exception
+Asset production source asset → reviewed asset Version and approval required
+Content validation lesson content → finding Subject expert decision
+Player session input → state update → feedback Accessibility and safety
+Recovery saved state → restored session Corrupt or missing save
+--- p43 ---
+Trace sources, ingestion, validation, transformation, storage, metrics, access, and 
+decision outputs before choosing visualizations.
+Business analytics: model data before the dashboard
+Stage Data artifact Control question
+Source transaction extract / survey Owner and definition?
+Validate quality finding What fails and who resolves it?
+Transform derived measure Formula and lineage defined?
+Publish metric / report / alert Who may interpret and act?
+--- p44 ---
+OBJECT-ORIENTED ANALYSIS
+AND UML
+--- p45 ---
+Use UML views to describe actors and goals, workflows, interactions, domain 
+concepts, relationships, and state changes.
+Object-oriented analysis organizes the domain around 
+responsibilities
+Actors +
+goals
+Use cases +
+narratives
+Activities +
+interactions
+Domain
+concepts
+States +
+constraints
+UML is a modeling language, not a complete development process. Use 
+only the views that answer the project’s analysis questions.
+--- p46 ---
+An actor is a role outside the system that interacts to achieve a goal—not a named 
+person, screen, database, or internal function.
+Start with actor goals and a defensible system boundary
+Actor Goal Boundary check
+Applicant Submit evidence and receive status Human remains external
+Reviewer Evaluate and record a decision Decision authority is external
+Credential provider Return credential status External system dependency
+Support officer Resolve failed submissions Role interacts only when needed
+--- p47 ---
+Connect actors to meaningful system services; keep step-by-step behavior in the 
+narrative rather than crowding the diagram.
+A use case diagram shows goals inside the system 
+boundary
+Applicant
+SYSTEM BOUNDARY
+Submit 
+application
+Check status
+Reviewer
+Use case names are verb phrases that express stakeholder goals or valuable 
+system services.
+--- p48 ---
+These relationships are semantic tools—not decorative arrows or substitutes for 
+ordinary actor association.
+Use «include», «extend», and generalization only when their 
+meaning fits
+Relationship Meaning Example
+«include» Required reusable behavior Submit application includes Validate required fields
+«extend» Optional or conditional behavior Resolve mismatch extends Review application
+Generalization Specialized actor or use case Senior reviewer specializes Reviewer
+Association Actor participates in a use case Applicant — Submit application
+--- p49 ---
+Document trigger, actors, preconditions, main success scenario, alternatives, 
+exceptions, postconditions, rules, and linked requirements.
+A use case narrative explains the complete interaction
+Narrative field UC-04 Review application
+Trigger A complete application enters the review queue
+Precondition Reviewer is assigned and authorized
+Main success Inspect evidence → record decision → notify applicant
+Alternative Return incomplete evidence with reason
+Postcondition Decision and history are recorded
+--- p50 ---
+Focus on actor intent and observable system behavior; avoid screen-by-screen 
+instructions.
+Strong use cases cover success, alternatives, and failure
+Quality check Weak narrative Better direction
+Goal focus Click Review button Reviewer evaluates an assigned application
+Alternatives Happy path only Incomplete, mismatch, and unavailable-provider paths
+Authorization Assumed Precondition and failure response stated
+Traceability No identifiers Requirements, rules, and acceptance linked
+--- p51 ---
+Use actions, decisions, merges, parallel paths, and swimlanes when responsibility or 
+concurrency matters.
+An activity diagram shows workflow and branching 
+behavior
+Receive
+application
+Check
+completeness
+[complete?]
+decide
+Verify +
+review
+Record +
+notify
+Guard conditions should be mutually understandable and traceable to 
+rules: [complete] / [incomplete], not vague labels such as [yes] / [no].
+--- p52 ---
+Each participant has a lifeline; messages reveal responsibility, request-response 
+order, and important alternatives.
+A sequence diagram shows time-ordered interaction
+Reviewer Review service Credential 
+provider
+request application
+verify credential
+return result
+display evidence
+--- p53 ---
+The activity diagram explains workflow; the sequence diagram assigns interactions. 
+Compare actions, branches, participants, and outcomes.
+Activity and sequence views must describe the same 
+scenario
+Scenario element Activity view Sequence view Consistent?
+Request review Receive assignment Reviewer → service Yes
+Verify identity Check credential Service → provider Yes
+Provider unavailable Pending branch Missing alt fragment No
+Record decision Final action Service → repository Check model
+--- p54 ---
+Begin with analysis concepts from the requirements and dictionary; add attributes 
+and responsibilities only when evidence supports them.
+Domain models define concepts and relationships
+APPLICANT
+applicant_id
+contact
+consent_status
+APPLICATION
+application_id
+submitted_at
+status
+REVIEW
+review_id
+decision
+rationale
+submits receives
+Do not turn every noun in the requirements into a class. Model concepts with 
+identity, meaning, behavior, or persistent relationships.
+--- p55 ---
+Read both ends of an association and validate optionality, minimums, maximums, 
+and lifecycle conditions with stakeholders and rules.
+Multiplicity states how many instances may participate
+Association Multiplicity Interpretation
+Applicant—Application 1 to 0..* One applicant may submit zero or many applications
+Application—Review 1 to 0..* An application may undergo several review cycles
+Review—Reviewer 0..* to 1 Each review is assigned to one reviewer
+Application—Credential 1 to 1..* At least one credential is required
+--- p56 ---
+Define entities, identifiers, attributes, relationships, cardinality, and optionality—then 
+reconcile them with the dictionary and DFD stores.
+Use an ERD when persistent data structure is the main 
+question
+APPLICANT
+PK applicant_id
+name
+contact
+APPLICATION
+PK application_id
+FK applicant_id
+status
+REVIEW
+PK review_id
+FK application_id
+decision
+1 : many 1 : many
+An ERD is not automatically a database design. At analysis level, focus on 
+business meaning and required relationships.
+--- p57 ---
+A state diagram is valuable for games, workflows, devices, approvals, security 
+controls, and any object with governed transitions.
+Use state modeling when behavior depends on lifecycle 
+state
+Draft Submitted Under review Verified /
+Rejected Archived
+Each transition needs an event, guard, or rule. Invalid transitions—such as Draft 
+directly to Verified—should be prevented and tested.
+--- p58 ---
+Not every project needs every possible diagram; every selected view must add 
+information and remain consistent with the rest.
+Choose model views by the question you must answer
+Question Preferred view Evidence of value
+What concepts and responsibilities exist? Domain / class model Requirements use stable domain concepts
+What persistent data relationships exist? ERD Stores and reports depend on cardinality
+How does an object change over time? State model Rules depend on lifecycle state
+How do participants interact? Sequence diagram Responsibility and order are uncertain
+--- p59 ---
+Compare identifiers, names, scope, actors, actions, data, rules, states, and 
+outcomes across every requirement and model view.
+Cross-model consistency is a deliberate inspection
+Anchor Must agree with Defect signal
+Requirement R-04 Use case, DFD process, acceptance Required behavior missing
+DFD flow Dictionary structure, sequence message Different meaning or contents
+Business rule P-SPEC, decision table, state transition Contradictory outcome
+Domain concept Dictionary, ERD/store, use case narrative Duplicate or undefined term
+--- p60 ---
+Walk through normal, alternative, failure, and unauthorized scenarios while peers 
+trace each step across models and requirements.
+A model walkthrough turns diagrams into testable 
+explanations
+Select
+scenario
+Trace
+requirement
+Walk through
+models
+Record
+defects
+Correct +
+baseline
+Quality gate: correct notation, complete scope, balanced flows, defined data, 
+explicit logic, consistent UML, and preserved traceability.
+--- p61 ---
+Class Activity 4 uses only synthetic or de-identified model descriptions or diagrams 
+and requires a documented validation record.
+AI may critique models—but the team must validate every 
+suggestion
+Sanitize
+model
+Request AI
+critique
+Test against
+DFD + UML 
+rules
+Accept / reject
+with reasons
+Correct +
+disclose
+Adaptive practice is assigned only when diagnostic or formative evidence shows a 
+need. It is AI-Integrated, ungraded, and not a fixed course deliverable.
+--- p62 ---
+Formative Assessment 4 — AI-Prohibited, ungraded: Complete the Canvas 
+quiz after Module 4 independently to check current mastery.
+Class Activity 4 — AI-Integrated: Submit the AI Model Consistency Audit 
+with sanitized inputs, prompts and outputs, critique, validation, accepted 
+and rejected advice, corrected models, and AI Use Disclosure.
+Summative Assessment 2 — AI-Prohibited, graded: Complete the Canvas 
+quiz after Module 4. Coverage is Modules 3–4.
+Module 4 activity path
+--- p63 ---
+Structured model set: Context diagram, balanced DFD levels, defined data flows
+and stores, data dictionary, and process specifications.
+Object-oriented model set: Use case diagram and narratives, activity and
+sequence views, and a domain/class model or ERD; include state modeling when
+justified.
+Consistency evidence: Defect log, peer walkthrough record, corrected models,
+and RTM links from requirements to model identifiers.
+Quality gate: Resolve material inconsistencies before Module 5 prototyping so the
+prototype does not validate the wrong behavior.
+Module 4 portfolio checkpoint
+--- p64 ---
+REFERENCES
+--- p65 ---
+• Kendall, K. E., & Kendall, J. E. (2024). Systems analysis and design (11th ed.). Pearson.
+• Tilley, S. (2025). Systems analysis and design (13th ed.). Cengage.
+• Valacich, J. S., & George, J. F. (2024). Modern systems analysis and design (10th ed.). 
+Pearson.
+• Project Management Institute. (2024). Business analysis for practitioners: A practice guide 
+(2nd ed.).
+• ISO/IEC. (2023). ISO/IEC 25010:2023 — Product quality model. 
+https://www.iso.org/standard/78176.html
+• Object Management Group. (2017). Unified Modeling Language, Version 2.5.1. 
+https://www.omg.org/spec/UML/2.5.1
+• Instructor-provided textbook chapter guide, case analysis, specialization case pack, portfolio 
+template, rubric, and peer-review checklist released in Canvas.
+• All worked examples in this deck are synthetic and de-identified for instructional use.
+--- p66 ---
+MAKE THE SYSTEM CONSISTENT.
+THEN MAKE IT TANGIBLE.
