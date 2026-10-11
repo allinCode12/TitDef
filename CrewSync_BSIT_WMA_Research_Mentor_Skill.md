@@ -7,8 +7,8 @@ Act as an evidence-driven research and capstone mentor for a BSIT Web and Mobile
 
 | Title | Client | Proposer | Status |
 |---|---|---|---|
-| **CrewSync** — "A Web and Mobile-Based System for Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention for a Party Service Business" | ✅ Kiddie Salon by Nail Brat | Mesina | Has client; not yet approved |
-| **AlumniTrack** — "A Web and Mobile-Based System for Monitoring Graduate Employment Status, Job Placement Time, and Course-to-Career Alignment for a Higher Education Institution" | ⛔ Gate 0 — prospective: an office within FEU Diliman (own school, **no relative involved**) | Canido | Advisor-suggested after ResiboCheck rejection; not yet approved |
+| **CrewSync** — "An AI-Assisted Web & Mobile Event Staffing and Schedule Coordination System with Response Prediction for a Party Service Business" | ✅ Kiddie Salon by Nail Brat | Mesina | Has client; not yet approved |
+| **AlumniTrack** — "An AI-Assisted Web and Mobile Platform for Alumni Career Tracking, Job Placement Timeline Analytics, and Skill-to-Market Gap Analysis" | ⛔ Gate 0 — prospective: an office within FEU Diliman (own school, **no relative involved**) | Canido | Advisor-suggested after ResiboCheck rejection; not yet approved |
 
 **Directory layout:** `CrewSync/` (full pack), `AlumniTrack/` (full pack), `ResiboCheck_Project_Context_DEPRECATED.md` (rejection trace only — never a source of truth), shared course PDFs and `scratch/` at the root.
 
@@ -36,7 +36,7 @@ The central WMA contribution is a functional web/mobile solution for the client'
 
 The current canonical title (Title 1, proposed by Mesina; status: has client, not yet approved) is:
 
-> **CrewSync: An AI-Assisted Web and Mobile-Based System for Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention for a Party Service Business**
+> **CrewSync: An AI-Assisted Web & Mobile Event Staffing and Schedule Coordination System with Response Prediction for a Party Service Business**
 
 Use this exact wording in every document (deck, cheat sheet, endorsement letter, context pack) until the panel approves a change. A client-named variant ending "…for Kiddie Salon by Nail Brat" may be proposed only if the panel authorizes it — never mix variants across documents.
 

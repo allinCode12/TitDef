@@ -2,7 +2,7 @@
 
 > **Purpose of this file:** Single source of truth for the AlumniTrack capstone title. Give this file to any teammate or tool (slides, documentation, design, code) so everything stays consistent with the title, scope, client status, and IT0037 course lessons.
 >
-> **Version:** 0.1 (pre–client, pre–mock defense) · **Owner:** AzTech (Group 6) · **Proposer:** Canido · **Status:** ⛔ **Gate 0 — NO CLIENT YET.** Title suggested by the course advisor after the ResiboCheck rejection. Title not yet approved.
+> **Version:** 0.2 (title and AI/algorithm facets aligned to the submitted AzTech Title Proposal PDF) · **Owner:** AzTech (Group 6) · **Proposer:** Canido · **Status:** ⛔ **Gate 0 — NO CLIENT YET.** Title suggested by the course advisor after the ResiboCheck rejection. Title not yet approved.
 >
 > **Governing lesson (from ResiboCheck):** *Have a real client.* No pack content below this line may be treated as fact until a real institutional client is secured and interviewed. Every client-dependent item is `[TO VALIDATE]`.
 
@@ -37,7 +37,7 @@
 | Field | Value |
 |---|---|
 | **Title (submitted by Canido — missing Users/Setting element)** | AlumniTrack: A Web and Mobile-Based System for Monitoring Graduate Employment Status, Job Placement Time, and Course-to-Career Alignment |
-| **Title (v2 — per 2026-10-08 consultation: AI/algorithm/analytics required for all titles; pending approval)** | AlumniTrack: An AI-Assisted Web and Mobile-Based System for Graduate Employment Monitoring, Placement Analytics, and Course-to-Career Alignment for a Higher Education Institution |
+| **Title (v3 — aligned to the submitted AzTech Title Proposal PDF, Title 2; pending approval)** | AlumniTrack: An AI-Assisted Web and Mobile Platform for Alumni Career Tracking, Job Placement Timeline Analytics, and Skill-to-Market Gap Analysis |
 | **Alt. title (client-named variant — only after Gate 0 + panel authorization)** | AlumniTrack: … for [Client Institution Name] |
 | **Specialization** | BSIT — Web and Mobile Application |
 | **School / course** | FEU Diliman · IT0037 Systems Analysis and Design |
@@ -122,9 +122,11 @@ To develop a web and mobile system that enables a partner higher education insti
 ### Specific objectives (draft)
 1. Develop an alumni-facing interface (responsive web + mobile/PWA) for graduates to submit and update employment status, position, industry, and course-relevance information.
 2. Develop an admin web panel for the client office to manage programs, review submissions, and track job placement time per graduate/cohort.
-3. Implement course-to-career alignment summaries (per program) using AI-assisted career-track classification with an editable, transparent mapping — flags and indicators only, never employability verdicts on graduates.
-4. Implement role-based access, consent capture, and activity logging consistent with RA 10173.
-5. Evaluate the system with the client office and a sample of graduates using selected ISO/IEC 25010 characteristics, and compare data currency/completeness before and after use `[baseline TO VALIDATE]`.
+3. Implement an AI-based Natural Language Processing pipeline (tokenization + Named Entity Recognition) to extract, parse, and normalize skills from alumni job descriptions and industry job postings, mapped to standard taxonomies such as the CHED CMO 25 s. 2015 program outcomes.
+4. Implement a Vector Space Cosine Similarity matching engine to measure alignment between graduate skills, CHED CMO 25 s. 2015 curriculum outcomes, and industry labor demand, reported as a measurable alignment score, never as an employability verdict on a graduate.
+5. Provide longitudinal career analytics (Time-to-First-Employment, employment-status distribution by cohort, underemployment ratios) and empirical skill-gap views across graduating batches.
+6. Implement role-based access, consent capture, and activity logging consistent with RA 10173.
+7. Evaluate the NLP extraction model using precision, recall, and F1 against manually annotated postings, and overall software quality using selected ISO/IEC 25010 characteristics `[baseline TO VALIDATE]`.
 
 ### Success measures (fill after Gate 2)
 
@@ -163,7 +165,7 @@ To develop a web and mobile system that enables a partner higher education insti
 |---|---|
 | No job-posting board or recruiter marketplace | Different product; scope control |
 | No salary/payroll verification with employers | Out of scope; self-reported data is labeled as such |
-| AI-assisted career-track classification + placement-risk flags (no judgmental employability scores) | Per 2026-10-08 consultation, AI/Analytics required across titles. Classification is factual; mapping editable by the client office; risk flags prompt attention, never verdicts; no autonomy — office confirms; evaluation = agreement vs. manual coding |
+| AI = NLP skill extraction (NER); algorithm = Vector Space Cosine Similarity (no judgmental employability scores) | Per the AzTech Title Proposal, AI/Analytics required across titles. The NLP pipeline is the AI component; cosine similarity is the algorithm; extracted skills map to CHED CMO 25 taxonomies and O*NET-style categories `[taxonomy mapping TO VALIDATE]`; no autonomy — the office reviews; evaluation = NLP precision/recall/F1 vs. manual annotation |
 | No current-student tracking | Graduates only |
 | Self-reported data caveat | System reports *reported* outcomes, not audited outcomes — must be stated in evaluations |
 | Single institution (one client) | Results not generalized |
@@ -195,6 +197,8 @@ To develop a web and mobile system that enables a partner higher education insti
 | ADM-05 | Dashboard: response rate, placement time, course-to-career tables | Must | Figures reproducible from underlying records |
 | ADM-06 | Export (CSV/PDF) for reports | Should | Matches agreed report format `[TO VALIDATE]` |
 | ADM-07 | Activity log + consent report | Must | Who accessed/changed what, when |
+| ADM-08 | NLP skill extraction from job descriptions and postings | Must | Extracted skills normalized to taxonomy; editable by admin; precision/recall/F1 measured vs. manual annotation |
+| ADM-09 | Cosine-similarity curriculum and market alignment view | Must | Alignment score reproducible from stored skill vectors; no employability verdict produced |
 
 ### 7.3 Non-functional (ISO/IEC 25010 — selected)
 
@@ -337,6 +341,8 @@ Job board · recruiter portal · employer verification · AI matching · current
 | Question | Answer |
 |---|---|
 | Where is your client? | Gate 0 — being secured; that gap is precisely the lesson from our first title's rejection. |
+| What is the algorithm? | Vector Space Cosine Similarity compares graduate skill vectors against CHED CMO 25 s. 2015 curriculum outcomes and industry job-demand vectors, producing a reproducible alignment score, not an employability verdict. |
+| What is the AI part? | NLP with tokenization and Named Entity Recognition extracts and normalizes skills from alumni job descriptions and job postings, evaluated with precision, recall, and F1 against manually annotated postings. |
 | Isn't this just a Google Form? | A form captures one response; the system is for longitudinal status tracking, placement-time computation, and program-level alignment views — **subject to confirmation that this matches the client's real need**. |
 | Why web + mobile? | Alumni are off-campus and phone-first `[TO VALIDATE with sample survey]`; admin work is desk-based. |
 | Isn't alumni data sensitive? | Yes — RA 10173 applies; consent, minimization, retention rules, role-based access are designed in from the start. |

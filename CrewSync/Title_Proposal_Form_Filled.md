@@ -2,9 +2,9 @@
 
 **Form:** FEU Institute of Technology · College of Computer Studies · Capstone Project Title Proposal (System Analysis and Design)
 **Program:** Bachelor of Science in Information Technology, specialization in Web and Mobile Application
-**Group:** AzTech (Group 6) · **Members:** Canido, Felix Jed; Mesina, Patrick Kyle; [3rd member]
+**Group:** AzTech (Group 6) · **Members:** Canido, Felix Jed; Mesina, Patrick Kyle; Borromeo, Zire Niccolai; Oronico, Lee Justin
 **Term:** [x] 1st · Academic Year: 2026–2027
-**Proposed Project Title 1:** CrewSync: An AI-Assisted Web and Mobile-Based System for Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention for a Party Service Business
+**Proposed Project Title 1:** CrewSync: An AI-Assisted Web & Mobile Event Staffing and Schedule Coordination System with Response Prediction for a Party Service Business
 
 > **Source of truth (reconciled 2026-10-07):** this file now mirrors the team's actual template fill (`Title-Proposal-Template.docx.pdf`) with the 8 panel-level corrections applied — (1) "micro-service" wording removed, (2) claim verbs neutralized + COI disclosure restored in §2.0, (3) SO3 aligned to title's "Prevention" + SO5 evaluation added, (4) §5.0 claim verb / spacing / beneficiary labels, (5) §6.0 list numbering fixed 1–6, (6) §7.0 appendices limited to evidence that actually exists, (7) three scope guards in §4.0, (8) terminology unified to "talent(s)". Paste each field directly into the form.
 

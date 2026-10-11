@@ -1,7 +1,7 @@
 # CrewSync Defense Cheat Sheet
 
 **Proposed Working Title:**  
-*CrewSync: An AI-Assisted Web and Mobile-Based System for Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention for a Party Service Business*  
+*CrewSync: An AI-Assisted Web & Mobile Event Staffing and Schedule Coordination System with Response Prediction for a Party Service Business*  
 *(Client Partner: Kiddie Salon by Nail Brat)*
 
 ---

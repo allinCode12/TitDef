@@ -1,7 +1,7 @@
 # AlumniTrack Defense Cheat Sheet
 
 **Proposed Working Title:**  
-*AlumniTrack: An AI-Assisted Web and Mobile-Based System for Graduate Employment Monitoring, Placement Analytics, and Course-to-Career Alignment for a Higher Education Institution*  
+*AlumniTrack: An AI-Assisted Web and Mobile Platform for Alumni Career Tracking, Job Placement Timeline Analytics, and Skill-to-Market Gap Analysis*  
 *(Base wording by Canido lacked the "…for a Higher Education Institution" element — added for Module 1 compliance; pending approval)*  
 **Client Partner:** ⛔ Gate 0 — none yet
 

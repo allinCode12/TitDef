@@ -6,7 +6,7 @@
 ---
 
 ### Slide 4: Title Slide
-* **Title:** AlumniTrack: An AI-Assisted Web and Mobile-Based System for Graduate Employment Monitoring, Placement Analytics, and Course-to-Career Alignment for a Higher Education Institution
+* **Title:** AlumniTrack: An AI-Assisted Web and Mobile Platform for Alumni Career Tracking, Job Placement Timeline Analytics, and Skill-to-Market Gap Analysis
   * *(Base wording submitted by Canido omitted the "…for a Higher Education Institution" element — this version adds Module 1's Users/Setting element; pending team/advisor/panel approval at Gate 1)*
 * **Subtitle:** Capstone Title Proposal
 * **Client Partner:** ⛔ Gate 0 — being secured *(do not name a client that has not endorsed the project)*
@@ -17,7 +17,7 @@
 
 ### Slide 5: Title and Four-Element Breakdown (Module 1)
 * **Title Breakdown Table:**
-  * **System / Capability:** Graduate Employment Monitoring, Placement Analytics, and Course-to-Career Alignment (AI-assisted)
+  * **System / Capability:** Alumni Career Tracking, Job Placement Timeline Analytics, and Skill-to-Market Gap Analysis (AI-assisted)
   * **Users / Setting:** Graduates/Alumni (web + mobile) and the institution's alumni/registry office (web) — at a Higher Education Institution
   * **Value / Problem Direction:** Continuous, consolidated graduate outcome data instead of periodic manual collection `[TO VALIDATE against current process]`
   * **Specialization Differentiator:** Web and Mobile (alumni self-service submission anywhere + admin analytics dashboard)

@@ -21,7 +21,7 @@ Dear Esteemed Panel Members,
 I am writing to formally confirm that **Kiddie Salon by Nail Brat** agrees to serve as the industry partner and beneficiary for the Information Technology Capstone Project proposed by students of FEU Diliman under the research team **AzTech**:
 
 * **Proposed Project Title:**  
-  *CrewSync: An AI-Assisted Web and Mobile-Based System for Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention for a Party Service Business*
+  *CrewSync: An AI-Assisted Web & Mobile Event Staffing and Schedule Coordination System with Response Prediction for a Party Service Business*
 
 **1. Nature of the Business Need:**  
 Kiddie Salon by Nail Brat provides specialized kiddie pampering, nail art, and face painting services for birthday parties and events. Managing the scheduling and confirmation of our freelance/on-call talents across multiple concurrent events is currently done through informal messaging groups. This process has become time-consuming, prone to delayed responses, and increases the risk of scheduling overlaps during peak party seasons.

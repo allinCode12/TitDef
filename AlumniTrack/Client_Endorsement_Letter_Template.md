@@ -21,7 +21,7 @@ Dear Esteemed Panel Members,
 I am writing to formally confirm that **[Institution Name]**, through the **[Office Name]**, agrees to serve as the industry partner and beneficiary for the Information Technology Capstone Project proposed by students of FEU Diliman under the research team **AzTech**:
 
 * **Proposed Project Title:**  
-  *AlumniTrack: An AI-Assisted Web and Mobile-Based System for Graduate Employment Monitoring, Placement Analytics, and Course-to-Career Alignment for a Higher Education Institution*
+  *AlumniTrack: An AI-Assisted Web and Mobile Platform for Alumni Career Tracking, Job Placement Timeline Analytics, and Skill-to-Market Gap Analysis*
 
 **1. Nature of the Business Need:**  
 [Office Name] is responsible for [tracking graduate employment outcomes / consolidating tracer-survey responses / producing course-to-career reports — *insert the process confirmed in the client interview*]. Our current process involves [insert the client's own description of the current workflow — *do not insert pain points the client did not state*]. A web and mobile channel for graduates to submit and update their employment status would support [insert the client-stated benefit].

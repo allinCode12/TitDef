@@ -2,7 +2,7 @@
 
 > **Purpose of this file:** Single source of truth for the client-based capstone title. Give this file to any teammate or tool (slides, documentation, design, code) so everything stays consistent with the title, scope, client, and IT0037 course lessons.
 >
-> **Version:** 0.1 (pre–mock defense) · **Owner:** Frel · **Client:** Kiddie Salon by Nail Brat (owner is a relative of a team member) · **Status:** Client identified; primary data gathering not yet done
+> **Version:** 0.3 (title aligned to the submitted AzTech Title Proposal PDF; algorithm facet retained) · **Owner:** Frel · **Client:** Kiddie Salon by Nail Brat (owner is a relative of a team member) · **Status:** Client identified; primary data gathering not yet done
 
 > **Working name:** "CrewSync" is a placeholder. Alternatives: *SlotGlam*, *PartyCrew*, *TalentCall*, *BratCrew*. Pick one with the team and client, then find/replace.
 
@@ -12,7 +12,7 @@
 
 1. **Do not invent evidence.** No interviews, observations, or booking records have been collected yet. Never state event volume, no-show count, staffing time, or any pain point as fact. Use `[TO VALIDATE]`.
 2. **Disclose the conflict of interest.** The client owner is a relative. State it openly; triangulate with talents' input and actual records (Module 1 ethics: "hidden conflicts" is a red flag).
-3. **Respect the scope (Section 6).** No customer booking website, payments, payroll, inventory, CRM, or AI auto-assignment in this version.
+3. **Respect the scope (Section 6).** No customer booking website, payments, payroll, inventory, or CRM in this version. (AI response-likelihood scoring and the talent-to-slot assignment algorithm *are* in scope — see §4, §5, §6.)
 4. **Framing rule:** The pitch is *talent availability confirmation and event staffing*, not "an app for a salon."
 5. **Talents and owner are the users.** Customers (parents/party hosts) are not users.
 6. **Keep course lessons traceable (Section 9).**
@@ -24,8 +24,8 @@
 
 | Field | Value |
 |---|---|
-| **Title (v2 canonical — Title 1, revised after 2026-10-08 consultation: seems small + AI required; has client, re-approval pending)** | CrewSync: An AI-Assisted Web and Mobile-Based System for Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention for a Party Service Business |
-| **Alt. title (client-named variant — only if panel authorizes)** | CrewSync: An AI-Assisted Web and Mobile-Based System for Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention for Kiddie Salon by Nail Brat |
+| **Title (v3 canonical — aligned to the submitted AzTech Title Proposal PDF, Title 1; has client, re-approval pending)** | CrewSync: An AI-Assisted Web and Mobile Event Staffing and Schedule Coordination System with Response Prediction for a Party Service Business |
+| **Alt. title (client-named variant — only if panel authorizes)** | CrewSync: An AI-Assisted Web and Mobile Event Staffing and Schedule Coordination System with Response Prediction for Kiddie Salon by Nail Brat |
 | **Specialization** | BSIT — Web and Mobile Application |
 | **School / course** | FEU Diliman · IT0037 Systems Analysis and Design |
 | **Client** | Kiddie Salon by Nail Brat — mobile kiddie salon / party service (nail art, glitter, face painting, styling at events) |
@@ -42,12 +42,14 @@ Kiddie Salon by Nail Brat sends talents such as face painters and nail artists t
 
 | Element | In the title |
 |---|---|
-| Capability | Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention |
+| Capability | Event Staffing and Schedule Coordination with Response Prediction |
 | Users / setting | Party Service Business (Kiddie Salon by Nail Brat) |
 | Value / problem direction | Confirmed staffing per event; designed to prevent overlapping confirmed assignments |
 | Specialization differentiator | Web and Mobile (owner web panel + talent mobile app with notifications) |
 
 > Note on naming: Module 1 warns against titles that hide the real transaction. The real transaction here is **"request talent → talent confirms → event is staffed."** Keep "availability confirmation" or "event staffing" in the title.
+>
+> **Algorithm facet (added 2026-10-09):** *Event Staffing* is implemented as a **constrained bipartite assignment** — eligible talents (skills, availability, no blackout) matched to required role slots across events via **Kuhn-Munkres (Hungarian) matching**. Overlap/travel-buffer conflicts are hard constraints; the AI response-likelihood and a fairness term are cost weights; the owner confirms the result. This is CrewSync's **algorithm** facet for the advisor's Algorithm / Analytics / AI requirement.
 
 ---
 
@@ -117,9 +119,10 @@ To develop a web and mobile talent scheduling and availability confirmation syst
 1. Develop a web admin panel where the owner records confirmed events (date, time, venue, package tier) and the system generates the required talent slots per tier.
 2. Develop a mobile app where talents receive job requests, view event details, and accept or decline before a response deadline.
 3. Implement automatic handling of declined or expired requests by offering the slot to the next eligible talent, plus schedule-conflict checking.
-4. Provide a staffing dashboard, talent availability calendar, and reports (events staffed, response times, declines).
-5. Implement role-based access, activity logging, and data handling consistent with RA 10173.
-6. Evaluate the system with the owner and talents using selected ISO/IEC 25010 characteristics, and compare time-to-fully-staff an event before and after use `[baseline TO VALIDATE]`.
+4. Implement a talent-to-slot assignment algorithm (constrained bipartite matching / Kuhn-Munkres) that fills required role slots across events — weighting the AI response-likelihood and a fairness term — with overlap/travel-buffer conflicts enforced as constraints; the owner confirms the result.
+5. Provide a staffing dashboard, talent availability calendar, and reports (events staffed, response times, declines).
+6. Implement role-based access, activity logging, and data handling consistent with RA 10173.
+7. Evaluate the system with the owner and talents using selected ISO/IEC 25010 characteristics, and compare time-to-fully-staff an event before and after use `[baseline TO VALIDATE]`.
 
 ### Success measures (fill after data gathering)
 
@@ -138,7 +141,7 @@ To develop a web and mobile talent scheduling and availability confirmation syst
 1. **Owner posts event (web):** client name/reference, date, start–end time, venue, package tier, notes. Status: **Draft → Open**.
 2. **System builds slots:** the tier defines required roles (e.g., Tier 1 = 1 face painter; Tier 3 = 2 face painters + 1 nail artist + 1 stylist) `[tiers TO VALIDATE]`.
 3. **System finds eligible talents** per slot: has the skill, is active, is not on a blackout date, and has no overlapping confirmed event (including a travel buffer).
-4. **Notify:** eligible talents get a push notification with schedule, tier/role, venue, and **response deadline**.
+4. **Assign & notify:** the matching algorithm orders the eligible talents per slot (response-likelihood + fairness, conflict constraints enforced), then the next talent in line gets a push notification with schedule, tier/role, venue, and **response deadline**.
 5. **Talent responds (mobile):** Accept or Decline (with optional reason).
    - Accept → slot **Filled** (first valid acceptance wins, or owner picks — see §8.3).
    - Decline / no response by deadline → slot offered to next eligible talent (**auto-escalation**).
@@ -153,6 +156,7 @@ To develop a web and mobile talent scheduling and availability confirmation syst
 ### In scope
 - **Owner web panel:** login; manage talents (profile, skills, status); manage package tiers and required roles; create/edit/cancel events; auto-generated slots; send requests; staffing dashboard; manual assign/override; calendar view; reports; activity log
 - **Talent mobile app (PWA or cross-platform):** login; receive notifications; view job details; accept/decline before deadline; view own schedule; set blackout dates/availability
+- **Assignment engine:** constrained bipartite matching (Kuhn-Munkres) to fill role slots — AI response-likelihood + fairness as cost weights, overlap/travel-buffer conflicts as constraints; owner confirms
 - Rules: response deadlines, auto-expiry, auto-escalation, conflict checking, reminders
 - Database for users, talents, skills, tiers, events, slots, requests, responses, logs
 
@@ -164,6 +168,7 @@ To develop a web and mobile talent scheduling and availability confirmation syst
 | No payment, payroll, or talent fee computation | Separate system; future work |
 | No inventory (nail polish, paints, supplies) | Out of scope |
 | AI-assisted response-likelihood scoring — ranks within the eligible set only | Per 2026-10-08 consultation, AI/Analytics are required in all titles. Hard eligibility rules unchanged (transparent, explainable); AI only orders send-order and flags at-risk slots; factors visible; owner confirms; rules-only cold start until data accumulates; evaluation = predicted-vs-actual acceptance |
+| Assignment algorithm = constrained bipartite matching — recommends; owner confirms | Algorithm/AI/Analytics required in all titles. The matching computes the fill/order (Kuhn-Munkres); overlap/travel conflicts are hard constraints; the request→accept workflow is unchanged; owner confirms |
 | No GPS live tracking of talents | Privacy and scope |
 | Single business (one client) | Evaluation limited to Kiddie Salon by Nail Brat; results not generalized |
 | Notifications depend on talent's device/internet | Owner override + in-app status as fallback |
@@ -213,7 +218,7 @@ To develop a web and mobile talent scheduling and availability confirmation syst
 | NFR-05 | Reliability | A talent can never be confirmed for two overlapping events (system-enforced) |
 
 ### 7.4 Deliberately excluded (Won't, this version)
-Customer booking site · payments/payroll · inventory · AI ranking · GPS tracking · multi-business
+Customer booking site · payments/payroll · inventory · GPS tracking · multi-business
 
 ---
 
@@ -363,6 +368,8 @@ Open/Fully Staffed ──cancel──► Cancelled
 Owner: Manage Talents · Manage Tiers · Create Event · Send Requests · Monitor Staffing · Override Assignment · Cancel Event · View Reports
 Talent: View Request · Accept/Decline · View Schedule · Set Blackout Dates
 
+**Assignment algorithm (Kuhn-Munkres):** model talents and role slots as a bipartite graph. Edge cost = f(AI response-likelihood, fairness/rotation); edges are removed for conflicting (overlapping / within travel-buffer) assignments; the minimum-cost matching gives the recommended fill/order, which the owner confirms.
+
 **Decision table (eligibility, BR-02)**
 
 | Condition | R1 | R2 | R3 | R4 | R5 |
@@ -419,7 +426,7 @@ Talent: View Request · Accept/Decline · View Schedule · Set Blackout Dates
 | What if two talents accept at once? | Fill policy BR-04 — first valid acceptance wins (server-side check); other request withdrawn. |
 | Double booking? | System blocks overlapping confirmed events (BR-06). |
 | Is it fair to talents? | Rotation rule for who gets offered first; talents set blackout dates; decline has no penalty `[confirm with owner]`. |
-| Why not AI to pick the best talent? | Not needed and not supported by evidence; rule-based eligibility is explainable. |
+| What is the algorithm, and why not let AI pick? | A constrained bipartite matching (Kuhn-Munkres) assigns talents to role slots: hard eligibility/conflict rules are constraints, the AI response-likelihood + fairness are cost weights, and the owner confirms. Eligibility stays transparent; AI never picks autonomously. |
 | Customers? | Not users; owner keeps existing booking channels. |
 | Payments? | Out of scope; future work. |
 | Privacy? | Minimal talent data; customer data limited to event reference and venue; RA 10173; role-based access. |

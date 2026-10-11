@@ -4,7 +4,7 @@
 ---
 
 ### Slide 4: Title Slide
-* **Title:** CrewSync: An AI-Assisted Web and Mobile-Based System for Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention for a Party Service Business
+* **Title:** CrewSync: An AI-Assisted Web & Mobile Event Staffing and Schedule Coordination System with Response Prediction for a Party Service Business
 * **Subtitle:** Capstone Title Proposal
 * **Client Partner:** Kiddie Salon by Nail Brat
 * **Specialization:** BSIT — Web and Mobile Application
@@ -14,7 +14,7 @@
 
 ### Slide 5: Title and Four-Element Breakdown (Module 1)
 * **Title Breakdown Table:**
-  * **System / Capability:** Event Staffing, Predictive Response Analytics, and Schedule Conflict Prevention
+  * **System / Capability:** Event Staffing and Schedule Coordination with Response Prediction
   * **Users / Setting:** Party Service Business (Kiddie Salon by Nail Brat)
   * **Value / Problem Direction:** Fully staffed events with tracked availability; designed to prevent overlapping confirmed assignments; less manual follow-up
   * **Specialization Differentiator:** Web and Mobile (Owner web management dashboard + Talent mobile availability app with push alerts)
